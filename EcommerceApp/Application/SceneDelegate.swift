@@ -9,6 +9,7 @@ import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
+    var appCoordinator: AppCoordinator?
     var window: UIWindow?
 
 
@@ -17,9 +18,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         let navController = UINavigationController()
+        appCoordinator = AppCoordinator.init(navigationController: navController)
         
         window = UIWindow(windowScene: windowScene)
         window?.rootViewController = navController
+        appCoordinator?.start()
         window?.makeKeyAndVisible()
     }
 }

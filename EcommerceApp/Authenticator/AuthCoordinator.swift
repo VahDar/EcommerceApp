@@ -1,5 +1,5 @@
 //
-//  AppCoordinator.swift
+//  AuthCoordinator.swift
 //  EcommerceApp
 //
 //  Created by Vakhtang on 02.06.2023.
@@ -8,8 +8,7 @@
 import Foundation
 import UIKit
 
-class AppCoordinator: Coordinator {
-    
+class AuthCoordinator: Coordinator {
     var parentCoordinator: Coordinator?
     
     var children: [Coordinator] = []
@@ -21,18 +20,12 @@ class AppCoordinator: Coordinator {
     }
     
     func start() {
-        goToAuth()
+        goToMainAuthPage()
     }
     
-    func goToAuth() {
-        
-        let authCoordinator = AuthCoordinator.init(navigationController: navigationController)
-        children.removeAll()
-        
-        authCoordinator.parentCoordinator = self
-        children.append(authCoordinator)
-        authCoordinator.start()
+    func goToMainAuthPage() {
+        let vc = MainAuthPageViewController()
+        navigationController.pushViewController(vc, animated: true)
     }
-    
     
 }
