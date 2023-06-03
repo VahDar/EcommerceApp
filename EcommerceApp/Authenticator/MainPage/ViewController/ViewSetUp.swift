@@ -65,7 +65,7 @@ class ViewSetUp {
         return label
     }()
     
-    private let logInButton: UIButton = {
+        let logInButton: UIButton = {
         
         let button = UIButton()
         button.backgroundColor = .black
@@ -79,7 +79,7 @@ class ViewSetUp {
         return button
     }()
     
-    private let signUpButton: UIButton = {
+        let signUpButton: UIButton = {
         
         let button = UIButton()
         button.backgroundColor = .white

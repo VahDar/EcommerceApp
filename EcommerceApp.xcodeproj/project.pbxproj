@@ -17,6 +17,9 @@
 		FC12E60C2A2A4C8F0031E023 /* MainAuthPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC12E60B2A2A4C8F0031E023 /* MainAuthPageViewController.swift */; };
 		FC12E60F2A2A4CDA0031E023 /* MainAuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC12E60E2A2A4CDA0031E023 /* MainAuthViewModel.swift */; };
 		FC12E6112A2A60440031E023 /* ViewSetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC12E6102A2A60440031E023 /* ViewSetUp.swift */; };
+		FC3F2AF12A2B7F8C00866DDA /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F2AF02A2B7F8C00866DDA /* SignUpViewModel.swift */; };
+		FC3F2AF52A2B7FC300866DDA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F2AF42A2B7FC300866DDA /* SignUpViewController.swift */; };
+		FC3F2AF72A2B7FF800866DDA /* UIViewSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F2AF62A2B7FF800866DDA /* UIViewSignUp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		FC12E60B2A2A4C8F0031E023 /* MainAuthPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAuthPageViewController.swift; sourceTree = "<group>"; };
 		FC12E60E2A2A4CDA0031E023 /* MainAuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAuthViewModel.swift; sourceTree = "<group>"; };
 		FC12E6102A2A60440031E023 /* ViewSetUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSetUp.swift; sourceTree = "<group>"; };
+		FC3F2AF02A2B7F8C00866DDA /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		FC3F2AF42A2B7FC300866DDA /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		FC3F2AF62A2B7FF800866DDA /* UIViewSignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewSignUp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				FC12E6082A2A4AFA0031E023 /* AuthCoordinator.swift */,
-				FC12E60D2A2A4CBF0031E023 /* ViewModel */,
-				FC12E60A2A2A4C600031E023 /* ViewController */,
+				FC3F2AEE2A2B7F2200866DDA /* MainPage */,
+				FC3F2AEF2A2B7F4C00866DDA /* Register */,
 			);
 			path = Authenticator;
 			sourceTree = "<group>";
@@ -117,6 +123,41 @@
 				FC12E60E2A2A4CDA0031E023 /* MainAuthViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FC3F2AEE2A2B7F2200866DDA /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				FC12E60A2A2A4C600031E023 /* ViewController */,
+				FC12E60D2A2A4CBF0031E023 /* ViewModel */,
+			);
+			path = MainPage;
+			sourceTree = "<group>";
+		};
+		FC3F2AEF2A2B7F4C00866DDA /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				FC3F2AF32A2B7FA200866DDA /* ViewController */,
+				FC3F2AF22A2B7F9400866DDA /* ViewModel */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		FC3F2AF22A2B7F9400866DDA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FC3F2AF02A2B7F8C00866DDA /* SignUpViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FC3F2AF32A2B7FA200866DDA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FC3F2AF42A2B7FC300866DDA /* SignUpViewController.swift */,
+				FC3F2AF62A2B7FF800866DDA /* UIViewSignUp.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,12 +231,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC12E60C2A2A4C8F0031E023 /* MainAuthPageViewController.swift in Sources */,
+				FC3F2AF52A2B7FC300866DDA /* SignUpViewController.swift in Sources */,
+				FC3F2AF72A2B7FF800866DDA /* UIViewSignUp.swift in Sources */,
 				FC12E60F2A2A4CDA0031E023 /* MainAuthViewModel.swift in Sources */,
 				FC12E6092A2A4AFA0031E023 /* AuthCoordinator.swift in Sources */,
 				FC12E6062A2A45B50031E023 /* Coordinator.swift in Sources */,
 				FC12E6032A2A459B0031E023 /* AppCoordinator.swift in Sources */,
 				FC12E5EC2A2A43F40031E023 /* AppDelegate.swift in Sources */,
 				FC12E6112A2A60440031E023 /* ViewSetUp.swift in Sources */,
+				FC3F2AF12A2B7F8C00866DDA /* SignUpViewModel.swift in Sources */,
 				FC12E5EE2A2A43F40031E023 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

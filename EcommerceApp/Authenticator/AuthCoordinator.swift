@@ -25,6 +25,16 @@ class AuthCoordinator: Coordinator {
     
     func goToMainAuthPage() {
         let vc = MainAuthPageViewController()
+        let viewModel = MainAuthViewModel()
+        viewModel.coordinator = self
+        vc.viewModel = viewModel
+        navigationController.pushViewController(vc, animated: true)
+    }
+    
+    func goToSignUpPage() {
+        let vc = SignUpViewController()
+        let viewModel = SignUpViewModel()
+        vc.viewModel = viewModel
         navigationController.pushViewController(vc, animated: true)
     }
     
