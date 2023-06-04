@@ -7,7 +7,6 @@
 
 import Foundation
 import UIKit
-import QuartzCore
 
 class UIViewSignUp {
     
@@ -93,7 +92,7 @@ class UIViewSignUp {
     let signUpButton: UIButton = {
         
         let button = UIButton()
-        button.backgroundColor = #colorLiteral(red: 0.1048152182, green: 0.06028372085, blue: 1, alpha: 1)
+        button.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         button.setTitle("Sign Up", for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.layer.cornerRadius = 20
@@ -141,7 +140,7 @@ class UIViewSignUp {
         mailTextField.heightAnchor.constraint(equalToConstant: 35).isActive = true
         
         //setUp passwordTextFiled
-        passwordTextField.topAnchor.constraint(equalTo: mailTextField.bottomAnchor, constant: 10).isActive = true
+        passwordTextField.topAnchor.constraint(equalTo: mailTextField.bottomAnchor, constant: 15).isActive = true
         passwordTextField.widthAnchor.constraint(equalToConstant: 300).isActive = true
         passwordTextField.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
         passwordTextField.heightAnchor.constraint(equalToConstant: 35).isActive = true

@@ -14,4 +14,8 @@ class MainAuthViewModel {
     func goToSignUp() {
         coordinator?.goToSignUpPage()
     }
+    
+    func goToSignIn() {
+        coordinator?.goToLogInPage()
+    }
 }

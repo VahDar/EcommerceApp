@@ -17,6 +17,7 @@ class MainAuthPageViewController: UIViewController {
         viewSetUp.mainAuth = self
         viewSetUp.setUp()
         signUpPressed()
+        logInPressed()
     }
     
     func signUpPressed() {
@@ -25,6 +26,14 @@ class MainAuthPageViewController: UIViewController {
     
     @objc func signUpButton() {
         viewModel.goToSignUp()
+    }
+    
+    func logInPressed() {
+        viewSetUp.logInButton.addTarget(self, action: #selector(logInButton), for: .touchUpInside)
+    }
+    
+    @objc func logInButton() {
+        viewModel.goToSignIn()
     }
     
 

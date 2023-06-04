@@ -20,6 +20,10 @@
 		FC3F2AF12A2B7F8C00866DDA /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F2AF02A2B7F8C00866DDA /* SignUpViewModel.swift */; };
 		FC3F2AF52A2B7FC300866DDA /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F2AF42A2B7FC300866DDA /* SignUpViewController.swift */; };
 		FC3F2AF72A2B7FF800866DDA /* UIViewSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F2AF62A2B7FF800866DDA /* UIViewSignUp.swift */; };
+		FC3F2AFB2A2BAD2200866DDA /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F2AFA2A2BAD2200866DDA /* SignInViewController.swift */; };
+		FC3F2AFE2A2BAD3F00866DDA /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F2AFD2A2BAD3F00866DDA /* SignInViewModel.swift */; };
+		FC3F2B002A2BADAD00866DDA /* UIViewSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F2AFF2A2BADAD00866DDA /* UIViewSignIn.swift */; };
+		FC3F2B032A2BC7FD00866DDA /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F2B022A2BC7FD00866DDA /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,10 @@
 		FC3F2AF02A2B7F8C00866DDA /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		FC3F2AF42A2B7FC300866DDA /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		FC3F2AF62A2B7FF800866DDA /* UIViewSignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewSignUp.swift; sourceTree = "<group>"; };
+		FC3F2AFA2A2BAD2200866DDA /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		FC3F2AFD2A2BAD3F00866DDA /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		FC3F2AFF2A2BADAD00866DDA /* UIViewSignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewSignIn.swift; sourceTree = "<group>"; };
+		FC3F2B022A2BC7FD00866DDA /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +78,7 @@
 		FC12E5EA2A2A43F40031E023 /* EcommerceApp */ = {
 			isa = PBXGroup;
 			children = (
+				FC3F2B012A2BC7EA00866DDA /* extension */,
 				FC12E6072A2A4A970031E023 /* Authenticator */,
 				FC12E6042A2A45A30031E023 /* Supports */,
 				FC12E5FF2A2A45600031E023 /* Application */,
@@ -103,7 +112,8 @@
 			children = (
 				FC12E6082A2A4AFA0031E023 /* AuthCoordinator.swift */,
 				FC3F2AEE2A2B7F2200866DDA /* MainPage */,
-				FC3F2AEF2A2B7F4C00866DDA /* Register */,
+				FC3F2AF82A2BACE400866DDA /* LogIn */,
+				FC3F2AEF2A2B7F4C00866DDA /* SignUp */,
 			);
 			path = Authenticator;
 			sourceTree = "<group>";
@@ -134,13 +144,13 @@
 			path = MainPage;
 			sourceTree = "<group>";
 		};
-		FC3F2AEF2A2B7F4C00866DDA /* Register */ = {
+		FC3F2AEF2A2B7F4C00866DDA /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
 				FC3F2AF32A2B7FA200866DDA /* ViewController */,
 				FC3F2AF22A2B7F9400866DDA /* ViewModel */,
 			);
-			path = Register;
+			path = SignUp;
 			sourceTree = "<group>";
 		};
 		FC3F2AF22A2B7F9400866DDA /* ViewModel */ = {
@@ -158,6 +168,40 @@
 				FC3F2AF62A2B7FF800866DDA /* UIViewSignUp.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FC3F2AF82A2BACE400866DDA /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				FC3F2AF92A2BAD0D00866DDA /* ViewController */,
+				FC3F2AFC2A2BAD2A00866DDA /* ViewModel */,
+			);
+			path = LogIn;
+			sourceTree = "<group>";
+		};
+		FC3F2AF92A2BAD0D00866DDA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FC3F2AFA2A2BAD2200866DDA /* SignInViewController.swift */,
+				FC3F2AFF2A2BADAD00866DDA /* UIViewSignIn.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FC3F2AFC2A2BAD2A00866DDA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FC3F2AFD2A2BAD3F00866DDA /* SignInViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FC3F2B012A2BC7EA00866DDA /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				FC3F2B022A2BC7FD00866DDA /* File.swift */,
+			);
+			path = extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,12 +278,16 @@
 				FC3F2AF52A2B7FC300866DDA /* SignUpViewController.swift in Sources */,
 				FC3F2AF72A2B7FF800866DDA /* UIViewSignUp.swift in Sources */,
 				FC12E60F2A2A4CDA0031E023 /* MainAuthViewModel.swift in Sources */,
+				FC3F2AFE2A2BAD3F00866DDA /* SignInViewModel.swift in Sources */,
 				FC12E6092A2A4AFA0031E023 /* AuthCoordinator.swift in Sources */,
 				FC12E6062A2A45B50031E023 /* Coordinator.swift in Sources */,
 				FC12E6032A2A459B0031E023 /* AppCoordinator.swift in Sources */,
 				FC12E5EC2A2A43F40031E023 /* AppDelegate.swift in Sources */,
+				FC3F2AFB2A2BAD2200866DDA /* SignInViewController.swift in Sources */,
+				FC3F2B032A2BC7FD00866DDA /* File.swift in Sources */,
 				FC12E6112A2A60440031E023 /* ViewSetUp.swift in Sources */,
 				FC3F2AF12A2B7F8C00866DDA /* SignUpViewModel.swift in Sources */,
+				FC3F2B002A2BADAD00866DDA /* UIViewSignIn.swift in Sources */,
 				FC12E5EE2A2A43F40031E023 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
