@@ -25,9 +25,8 @@
 		FC3F2AFE2A2BAD3F00866DDA /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F2AFD2A2BAD3F00866DDA /* SignInViewModel.swift */; };
 		FC3F2B002A2BADAD00866DDA /* UIViewSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F2AFF2A2BADAD00866DDA /* UIViewSignIn.swift */; };
 		FC3F2B032A2BC7FD00866DDA /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F2B022A2BC7FD00866DDA /* File.swift */; };
+		FCC2E54D2A2FA28E00C1A44C /* SingUpAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC2E54C2A2FA28E00C1A44C /* SingUpAuthManager.swift */; };
 		FCDDF4FF2A2E2FD300F9E1F3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FCDDF4FE2A2E2FD300F9E1F3 /* GoogleService-Info.plist */; };
-		FCDDF5012A2E476C00F9E1F3 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDDF5002A2E476C00F9E1F3 /* AuthService.swift */; };
-		FCDDF5052A2E535600F9E1F3 /* ModelSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDDF5042A2E535600F9E1F3 /* ModelSignUp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,9 +52,8 @@
 		FC3F2AFD2A2BAD3F00866DDA /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		FC3F2AFF2A2BADAD00866DDA /* UIViewSignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewSignIn.swift; sourceTree = "<group>"; };
 		FC3F2B022A2BC7FD00866DDA /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		FCC2E54C2A2FA28E00C1A44C /* SingUpAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpAuthManager.swift; sourceTree = "<group>"; };
 		FCDDF4FE2A2E2FD300F9E1F3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		FCDDF5002A2E476C00F9E1F3 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
-		FCDDF5042A2E535600F9E1F3 /* ModelSignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSignUp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,8 +176,7 @@
 		FC3F2AEF2A2B7F4C00866DDA /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
-				FCDDF5032A2E533A00F9E1F3 /* Model */,
-				FCDDF5022A2E477600F9E1F3 /* Service */,
+				FCC2E54B2A2FA26F00C1A44C /* SingUpAuthManager */,
 				FC3F2AF32A2B7FA200866DDA /* ViewController */,
 				FC3F2AF22A2B7F9400866DDA /* ViewModel */,
 			);
@@ -237,20 +234,12 @@
 			path = extension;
 			sourceTree = "<group>";
 		};
-		FCDDF5022A2E477600F9E1F3 /* Service */ = {
+		FCC2E54B2A2FA26F00C1A44C /* SingUpAuthManager */ = {
 			isa = PBXGroup;
 			children = (
-				FCDDF5002A2E476C00F9E1F3 /* AuthService.swift */,
+				FCC2E54C2A2FA28E00C1A44C /* SingUpAuthManager.swift */,
 			);
-			path = Service;
-			sourceTree = "<group>";
-		};
-		FCDDF5032A2E533A00F9E1F3 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				FCDDF5042A2E535600F9E1F3 /* ModelSignUp.swift */,
-			);
-			path = Model;
+			path = SingUpAuthManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -373,18 +362,17 @@
 				FC3F2AF72A2B7FF800866DDA /* UIViewSignUp.swift in Sources */,
 				FC12E60F2A2A4CDA0031E023 /* MainAuthViewModel.swift in Sources */,
 				FC3F2AFE2A2BAD3F00866DDA /* SignInViewModel.swift in Sources */,
+				FCC2E54D2A2FA28E00C1A44C /* SingUpAuthManager.swift in Sources */,
 				FC12E6092A2A4AFA0031E023 /* AuthCoordinator.swift in Sources */,
 				FC12E6062A2A45B50031E023 /* Coordinator.swift in Sources */,
 				FC12E6032A2A459B0031E023 /* AppCoordinator.swift in Sources */,
 				FC12E5EC2A2A43F40031E023 /* AppDelegate.swift in Sources */,
 				FC3F2AFB2A2BAD2200866DDA /* SignInViewController.swift in Sources */,
-				FCDDF5052A2E535600F9E1F3 /* ModelSignUp.swift in Sources */,
 				FC3F2B032A2BC7FD00866DDA /* File.swift in Sources */,
 				FC12E6112A2A60440031E023 /* ViewSetUp.swift in Sources */,
 				FC3F2AF12A2B7F8C00866DDA /* SignUpViewModel.swift in Sources */,
 				FC3F2B002A2BADAD00866DDA /* UIViewSignIn.swift in Sources */,
 				FC12E5EE2A2A43F40031E023 /* SceneDelegate.swift in Sources */,
-				FCDDF5012A2E476C00F9E1F3 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

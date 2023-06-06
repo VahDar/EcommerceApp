@@ -43,6 +43,9 @@ class UIViewSignIn {
         textField.layer.borderWidth = 1
         textField.layer.cornerRadius = 20
         textField.layer.borderColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+        textField.textContentType = .emailAddress
+        textField.keyboardType = .emailAddress
+        textField.autocapitalizationType = .none
         textField.translatesAutoresizingMaskIntoConstraints = false
         return textField
     }()
@@ -55,6 +58,9 @@ class UIViewSignIn {
         textField.layer.cornerRadius = 20
         textField.layer.borderWidth = 1
         textField.layer.borderColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+        textField.textContentType = .password
+        textField.autocapitalizationType = .none
+        textField.isSecureTextEntry = true
         textField.translatesAutoresizingMaskIntoConstraints = false
         return textField
     }()

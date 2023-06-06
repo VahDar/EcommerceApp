@@ -10,7 +10,8 @@ import UIKit
 
 class UIViewSignUp {
     
-    var singInVC: SignUpViewController?
+    weak var singUpVC: SignUpViewController?
+    weak var singUpVM: SignUpViewModel?
     
     let contentView: UIView = {
         
@@ -38,7 +39,7 @@ class UIViewSignUp {
         return label
     }()
     
-    private let nameTextField: UITextField = {
+    let nameTextField: UITextField = {
        
         let textField = UITextField()
         textField.placeholder = "  Name"
@@ -51,7 +52,7 @@ class UIViewSignUp {
         return textField
     }()
     
-    private let phoneTextField: UITextField = {
+    let phoneTextField: UITextField = {
        
         let textField = UITextField()
         textField.placeholder = "  Phone Number"
@@ -59,11 +60,13 @@ class UIViewSignUp {
         textField.layer.borderColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         textField.layer.borderWidth = 1
         textField.layer.cornerRadius = 20
+        textField.textContentType = .telephoneNumber
+        textField.keyboardType = .phonePad
         textField.translatesAutoresizingMaskIntoConstraints = false
         return textField
     }()
     
-    private let mailTextField: UITextField = {
+    let mailTextField: UITextField = {
        
         let textField = UITextField()
         textField.placeholder = "  E-mail Adress"
@@ -72,11 +75,14 @@ class UIViewSignUp {
         textField.layer.borderColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         textField.layer.borderWidth = 1
         textField.layer.cornerRadius = 20
+        textField.textContentType = .emailAddress
+        textField.keyboardType = .emailAddress
+        textField.autocapitalizationType = .none
         textField.translatesAutoresizingMaskIntoConstraints = false
         return textField
     }()
     
-    private let passwordTextField: UITextField = {
+    let passwordTextField: UITextField = {
        
         let textField = UITextField()
         textField.placeholder = "  Password"
@@ -85,6 +91,9 @@ class UIViewSignUp {
         textField.layer.borderColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         textField.layer.borderWidth = 1
         textField.layer.cornerRadius = 20
+        textField.textContentType = .password
+        textField.isSecureTextEntry = true
+        textField.autocapitalizationType = .none
         textField.translatesAutoresizingMaskIntoConstraints = false
         return textField
     }()
@@ -103,7 +112,7 @@ class UIViewSignUp {
     }()
     
     func setUpUI() {
-        singInVC!.view.addSubview(contentView)
+        singUpVC!.view.addSubview(contentView)
         contentView.addSubview(textLabel)
         contentView.addSubview(nameTextField)
         contentView.addSubview(phoneTextField)
@@ -112,10 +121,10 @@ class UIViewSignUp {
         contentView.addSubview(signUpButton)
         
         //setUp contentView
-        contentView.topAnchor.constraint(equalTo: singInVC!.view.topAnchor).isActive = true
-        contentView.bottomAnchor.constraint(equalTo: singInVC!.view.bottomAnchor).isActive = true
-        contentView.leftAnchor.constraint(equalTo: singInVC!.view.leftAnchor).isActive = true
-        contentView.rightAnchor.constraint(equalTo: singInVC!.view.rightAnchor).isActive = true
+        contentView.topAnchor.constraint(equalTo: singUpVC!.view.topAnchor).isActive = true
+        contentView.bottomAnchor.constraint(equalTo: singUpVC!.view.bottomAnchor).isActive = true
+        contentView.leftAnchor.constraint(equalTo: singUpVC!.view.leftAnchor).isActive = true
+        contentView.rightAnchor.constraint(equalTo: singUpVC!.view.rightAnchor).isActive = true
         
         //setUp textLabel
         textLabel.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 20).isActive = true

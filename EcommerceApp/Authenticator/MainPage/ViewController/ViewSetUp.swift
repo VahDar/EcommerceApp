@@ -10,7 +10,7 @@ import UIKit
 
 class ViewSetUp {
     
-    var mainAuth: MainAuthPageViewController?
+    weak var mainAuth: MainAuthPageViewController?
   
    
     let contentView: UIView = {
