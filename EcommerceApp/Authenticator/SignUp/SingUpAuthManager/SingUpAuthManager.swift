@@ -14,7 +14,7 @@ class SingUpAuthManager {
         
         Auth.auth().createUser(withEmail: email, password: password) {(authResult, error) in
             if let user = authResult?.user {
-                print(user)
+                print(user.uid)
                 complition(true)
             } else {
                 print(error!)

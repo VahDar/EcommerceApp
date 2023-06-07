@@ -42,6 +42,7 @@ class AuthCoordinator: Coordinator {
     func goToSignUpPage() {
         let vc = SignUpViewController()
         let viewModel = SignUpViewModel()
+        viewModel.coordinator = self
         vc.viewModel = viewModel
         navigationController.pushViewController(vc, animated: true)
     }

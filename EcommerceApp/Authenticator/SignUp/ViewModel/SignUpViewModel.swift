@@ -15,9 +15,7 @@ class SignUpViewModel {
     
     func registerUser() {
       
-        
-        
-       
+        coordinator?.goToLogInPage()
         
     }
     

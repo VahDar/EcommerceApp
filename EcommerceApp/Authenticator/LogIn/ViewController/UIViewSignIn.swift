@@ -35,7 +35,7 @@ class UIViewSignIn {
         return label
     }()
     
-    private let emailTextField: UITextField = {
+     let emailTextField: UITextField = {
         
         let textField = UITextField()
         textField.placeholder = "  E-mail"
@@ -50,7 +50,7 @@ class UIViewSignIn {
         return textField
     }()
     
-    private let passwordTextField: UITextField = {
+     let passwordTextField: UITextField = {
        
         let textField = UITextField()
         textField.placeholder = "  Paswword"

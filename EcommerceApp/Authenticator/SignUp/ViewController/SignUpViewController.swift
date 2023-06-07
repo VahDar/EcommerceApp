@@ -12,6 +12,7 @@ class SignUpViewController: UIViewController {
     let uiView = UIViewSignUp()
     var viewModel: SignUpViewModel?
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         uiView.singUpVC = self
@@ -24,7 +25,6 @@ class SignUpViewController: UIViewController {
     }
     
     @objc func registerButton() {
-//        viewModel?.registerUser()
         let signUpManager = SingUpAuthManager()
         if let email = uiView.mailTextField.text, let password = uiView.passwordTextField.text {
             signUpManager.createUser(email: email, password: password) {[weak self] (success) in
@@ -32,12 +32,21 @@ class SignUpViewController: UIViewController {
                 var message = ""
                 if (success) {
                     message = "User was sucessfully created."
+                    let alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+                    let action = UIAlertAction(title: "Ok", style: .default) { action in
+                        self.viewModel?.registerUser()
+                    }
+                    alertController.addAction(action)
+                    self.present(alertController, animated: true, completion: nil)
                 } else {
                     message = "There was an error."
+                    let alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+                    alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+                     present(alertController, animated: true, completion: nil)
                 }
-                let alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
-                alertController.addAction(UIAlertAction(title: "OK", style: .cancel))
-                present(alertController, animated: true)
+                
+               
+                
                 
                            
             }
