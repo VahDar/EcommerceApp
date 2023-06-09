@@ -8,7 +8,7 @@
 import Foundation
 import FirebaseAuth
 
-class SingUpAuthManager {
+class SignUpAuthManager {
     
     func createUser(email: String, password: String, complition: @escaping (_ success: Bool) -> Void) {
         
