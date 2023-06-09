@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import GoogleSignIn
 
 class UIViewSignIn {
     
@@ -125,6 +126,7 @@ class UIViewSignIn {
         configuration.image = image?.withRenderingMode(.alwaysOriginal)
         configuration.imagePadding = 10
         let imageSize = CGSize(width: 24, height: 24)
+    
         button.setImage(image?.resized(to: imageSize), for: .normal)
         configuration.titlePadding = 10
         configuration.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10)

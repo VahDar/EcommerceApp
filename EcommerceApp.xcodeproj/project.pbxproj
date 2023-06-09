@@ -25,9 +25,8 @@
 		FC3F2AFE2A2BAD3F00866DDA /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F2AFD2A2BAD3F00866DDA /* SignInViewModel.swift */; };
 		FC3F2B002A2BADAD00866DDA /* UIViewSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F2AFF2A2BADAD00866DDA /* UIViewSignIn.swift */; };
 		FC3F2B032A2BC7FD00866DDA /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3F2B022A2BC7FD00866DDA /* File.swift */; };
-		FCC2E54D2A2FA28E00C1A44C /* SingUpAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC2E54C2A2FA28E00C1A44C /* SingUpAuthManager.swift */; };
+		FCC2E54D2A2FA28E00C1A44C /* SignUpAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC2E54C2A2FA28E00C1A44C /* SignUpAuthManager.swift */; };
 		FCDDF4FF2A2E2FD300F9E1F3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FCDDF4FE2A2E2FD300F9E1F3 /* GoogleService-Info.plist */; };
-		FCECB6BB2A30CF4F00F69ED3 /* SignInManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCECB6BA2A30CF4F00F69ED3 /* SignInManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,9 +52,8 @@
 		FC3F2AFD2A2BAD3F00866DDA /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		FC3F2AFF2A2BADAD00866DDA /* UIViewSignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewSignIn.swift; sourceTree = "<group>"; };
 		FC3F2B022A2BC7FD00866DDA /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
-		FCC2E54C2A2FA28E00C1A44C /* SingUpAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpAuthManager.swift; sourceTree = "<group>"; };
+		FCC2E54C2A2FA28E00C1A44C /* SignUpAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpAuthManager.swift; sourceTree = "<group>"; };
 		FCDDF4FE2A2E2FD300F9E1F3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		FCECB6BA2A30CF4F00F69ED3 /* SignInManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,7 +203,6 @@
 		FC3F2AF82A2BACE400866DDA /* LogIn */ = {
 			isa = PBXGroup;
 			children = (
-				FCECB6B92A30CF3700F69ED3 /* SignInManager */,
 				FC3F2AF92A2BAD0D00866DDA /* ViewController */,
 				FC3F2AFC2A2BAD2A00866DDA /* ViewModel */,
 			);
@@ -240,17 +237,9 @@
 		FCC2E54B2A2FA26F00C1A44C /* SingUpAuthManager */ = {
 			isa = PBXGroup;
 			children = (
-				FCC2E54C2A2FA28E00C1A44C /* SingUpAuthManager.swift */,
+				FCC2E54C2A2FA28E00C1A44C /* SignUpAuthManager.swift */,
 			);
 			path = SingUpAuthManager;
-			sourceTree = "<group>";
-		};
-		FCECB6B92A30CF3700F69ED3 /* SignInManager */ = {
-			isa = PBXGroup;
-			children = (
-				FCECB6BA2A30CF4F00F69ED3 /* SignInManager.swift */,
-			);
-			path = SignInManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -373,7 +362,7 @@
 				FC3F2AF72A2B7FF800866DDA /* UIViewSignUp.swift in Sources */,
 				FC12E60F2A2A4CDA0031E023 /* MainAuthViewModel.swift in Sources */,
 				FC3F2AFE2A2BAD3F00866DDA /* SignInViewModel.swift in Sources */,
-				FCC2E54D2A2FA28E00C1A44C /* SingUpAuthManager.swift in Sources */,
+				FCC2E54D2A2FA28E00C1A44C /* SignUpAuthManager.swift in Sources */,
 				FC12E6092A2A4AFA0031E023 /* AuthCoordinator.swift in Sources */,
 				FC12E6062A2A45B50031E023 /* Coordinator.swift in Sources */,
 				FC12E6032A2A459B0031E023 /* AppCoordinator.swift in Sources */,
@@ -381,7 +370,6 @@
 				FC3F2AFB2A2BAD2200866DDA /* SignInViewController.swift in Sources */,
 				FC3F2B032A2BC7FD00866DDA /* File.swift in Sources */,
 				FC12E6112A2A60440031E023 /* ViewSetUp.swift in Sources */,
-				FCECB6BB2A30CF4F00F69ED3 /* SignInManager.swift in Sources */,
 				FC3F2AF12A2B7F8C00866DDA /* SignUpViewModel.swift in Sources */,
 				FC3F2B002A2BADAD00866DDA /* UIViewSignIn.swift in Sources */,
 				FC12E5EE2A2A43F40031E023 /* SceneDelegate.swift in Sources */,

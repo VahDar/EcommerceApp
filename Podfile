@@ -9,5 +9,7 @@ target 'EcommerceApp' do
 	pod 'FirebaseAuth'
 	pod 'FirebaseFirestore'
 	pod 'FirebaseStorage'
+	pod 'GoogleSignIn'
+	pod 'GoogleSignInSwift'
 
 end

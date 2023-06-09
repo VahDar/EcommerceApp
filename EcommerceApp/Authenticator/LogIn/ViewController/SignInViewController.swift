@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import GoogleSignIn
 
 class SignInViewController: UIViewController {
 
@@ -17,6 +18,18 @@ class SignInViewController: UIViewController {
         uiSignIn.signInVC = self
         uiSignIn.signInUi()
         logInPressedButton()
+        googleSignInButton()
+    }
+    
+    
+    
+    func googleSignInButton() {
+        uiSignIn.googleButton.addTarget(viewModel, action: #selector(googleSignInPressed), for: .touchUpInside)
+    }
+    
+    @objc func googleSignInPressed() async {
+
+        await viewModel.signInWithGoogle()
     }
     
     func logInPressedButton() {
@@ -24,11 +37,11 @@ class SignInViewController: UIViewController {
     }
     
     @objc func logInPressed() {
-        let singInManager = SignInManager()
+        let singInVMEmailAndPass = SignInViewModel()
         
         guard let email = uiSignIn.emailTextField.text, let password = uiSignIn.passwordTextField.text else {return}
         
-        singInManager.signIn(email: email, password: password) { [weak self] success, error in
+        singInVMEmailAndPass.signIn(email: email, password: password) { [weak self] success, error in
             guard let self = self else {return}
             
             var message: String = ""
@@ -48,3 +61,5 @@ class SignInViewController: UIViewController {
     }
 
 }
+
+
