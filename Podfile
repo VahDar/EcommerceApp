@@ -1,8 +1,6 @@
+platform :ios, '16.4'
+target 'e-commerceApp' do
 
- platform :ios, '16.4'
-
-target 'EcommerceApp' do
-  
   use_frameworks!
 
 	pod 'FirebaseCore'
@@ -11,5 +9,10 @@ target 'EcommerceApp' do
 	pod 'FirebaseStorage'
 	pod 'GoogleSignIn'
 	pod 'GoogleSignInSwift'
-
+	
 end
+
+
+
+  
+  
