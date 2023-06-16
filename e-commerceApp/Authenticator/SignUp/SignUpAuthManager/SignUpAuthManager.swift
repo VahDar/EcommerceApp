@@ -10,6 +10,7 @@ import FirebaseAuth
 
 class SignUpAuthManager {
     
+    // SetUp auth to create new user
     func createUser(email: String, password: String, complition: @escaping (_ success: Bool) -> Void) {
         
         Auth.auth().createUser(withEmail: email, password: password) {(authResult, error) in

@@ -36,11 +36,12 @@ class SignInViewController: UIViewController {
 //        uiSignIn.facebookButton.permissions = ["public_profile", "email"]
 //    }
     
+    // Google button pressed
     func googleSignInButton() {
         uiSignIn.googleButton.addTarget(viewModel, action: #selector(viewModel.googleSignInPressed), for: .touchUpInside)
     }
     
-    
+    // Login button pressed
     func logInPressedButton() {
         uiSignIn.logInButton.addTarget(self, action: #selector(logInPressed), for: .touchUpInside)
     }

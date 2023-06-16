@@ -14,6 +14,7 @@ class UIViewSignIn {
     
     var signInVC: SignInViewController?
     
+    //SetUp UI elements
     let contentView: UIView = {
         
         let view = UIView()
@@ -121,12 +122,12 @@ class UIViewSignIn {
         return button
     }()
     
-    let googleSignInButton: GIDSignInButton = {
-        let button = GIDSignInButton()
-        button.layer.cornerRadius = 20
-        button.translatesAutoresizingMaskIntoConstraints = false
-        return button
-    }()
+//    let googleSignInButton: GIDSignInButton = {
+//        let button = GIDSignInButton()
+//        button.layer.cornerRadius = 20
+//        button.translatesAutoresizingMaskIntoConstraints = false
+//        return button
+//    }()
 
     
     let googleButton: UIButton = {
@@ -155,7 +156,7 @@ class UIViewSignIn {
     }()
     
     
-    
+    // SetUp constraints
     func signInUi() {
         signInVC!.view.addSubview(contentView)
         contentView.addSubview(textLabel)
@@ -165,7 +166,7 @@ class UIViewSignIn {
         contentView.addSubview(orLabel)
         contentView.addSubview(facebookButton)
         contentView.addSubview(googleButton)
-        contentView.addSubview(googleSignInButton)
+//        contentView.addSubview(googleSignInButton)
         
         
         //setUp contentView

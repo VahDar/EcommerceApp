@@ -27,6 +27,9 @@
 		FCB8B9052A34CD8500CDB3AF /* UIViewSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB8B9042A34CD8500CDB3AF /* UIViewSignUp.swift */; };
 		FCB8B9072A34CDB800CDB3AF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB8B9062A34CDB800CDB3AF /* SignUpViewController.swift */; };
 		FCB8B9092A34D08800CDB3AF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FCB8B9082A34D08800CDB3AF /* GoogleService-Info.plist */; };
+		FCEB2EFE2A3C67BB00ECF2DC /* MainPageCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEB2EFD2A3C67BB00ECF2DC /* MainPageCoordinator.swift */; };
+		FCEB2F012A3C685F00ECF2DC /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEB2F002A3C685F00ECF2DC /* MainPageViewController.swift */; };
+		FCEB2F032A3C689A00ECF2DC /* UIViewMainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEB2F022A3C689A00ECF2DC /* UIViewMainPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +57,9 @@
 		FCB8B9042A34CD8500CDB3AF /* UIViewSignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewSignUp.swift; sourceTree = "<group>"; };
 		FCB8B9062A34CDB800CDB3AF /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		FCB8B9082A34D08800CDB3AF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FCEB2EFD2A3C67BB00ECF2DC /* MainPageCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageCoordinator.swift; sourceTree = "<group>"; };
+		FCEB2F002A3C685F00ECF2DC /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		FCEB2F022A3C689A00ECF2DC /* UIViewMainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewMainPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,7 @@
 		FCB8B8C92A34C7A200CDB3AF /* e-commerceApp */ = {
 			isa = PBXGroup;
 			children = (
+				FCEB2EFC2A3C679900ECF2DC /* MainPage */,
 				FCB8B8E72A34CA5000CDB3AF /* Authenticator */,
 				FCB8B8E42A34CA0E00CDB3AF /* Supports */,
 				FCB8B8E12A34C8BC00CDB3AF /* Application */,
@@ -242,6 +249,24 @@
 			path = SignUpAuthManager;
 			sourceTree = "<group>";
 		};
+		FCEB2EFC2A3C679900ECF2DC /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				FCEB2EFD2A3C67BB00ECF2DC /* MainPageCoordinator.swift */,
+				FCEB2EFF2A3C684200ECF2DC /* ViewControler */,
+			);
+			path = MainPage;
+			sourceTree = "<group>";
+		};
+		FCEB2EFF2A3C684200ECF2DC /* ViewControler */ = {
+			isa = PBXGroup;
+			children = (
+				FCEB2F002A3C685F00ECF2DC /* MainPageViewController.swift */,
+				FCEB2F022A3C689A00ECF2DC /* UIViewMainPage.swift */,
+			);
+			path = ViewControler;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -359,6 +384,8 @@
 			files = (
 				FCB8B8E32A34C9ED00CDB3AF /* AppCoordinator.swift in Sources */,
 				FCB8B8E02A34C85400CDB3AF /* Extension.swift in Sources */,
+				FCEB2EFE2A3C67BB00ECF2DC /* MainPageCoordinator.swift in Sources */,
+				FCEB2F032A3C689A00ECF2DC /* UIViewMainPage.swift in Sources */,
 				FCB8B8F92A34CC4E00CDB3AF /* UIViewSignIn.swift in Sources */,
 				FCB8B8E62A34CA2500CDB3AF /* Coordinator.swift in Sources */,
 				FCB8B9012A34CD4100CDB3AF /* SignUpAuthManager.swift in Sources */,
@@ -372,6 +399,7 @@
 				FCB8B8ED2A34CAF600CDB3AF /* MainAuthPageViewController.swift in Sources */,
 				FCB8B8F22A34CB5F00CDB3AF /* MainAuthViewModel.swift in Sources */,
 				FCB8B8EF2A34CB0A00CDB3AF /* ViewSetUp.swift in Sources */,
+				FCEB2F012A3C685F00ECF2DC /* MainPageViewController.swift in Sources */,
 				FCB8B8CD2A34C7A200CDB3AF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

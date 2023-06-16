@@ -20,6 +20,7 @@ class MainAuthPageViewController: UIViewController {
         logInPressed()
     }
     
+    //SignUp button pressed
     func signUpPressed() {
         viewSetUp.signUpButton.addTarget(self, action: #selector(signUpButton), for: .touchUpInside)
     }
@@ -28,6 +29,7 @@ class MainAuthPageViewController: UIViewController {
         viewModel.goToSignUp()
     }
     
+    //LogIn button pressed
     func logInPressed() {
         viewSetUp.logInButton.addTarget(self, action: #selector(logInButton), for: .touchUpInside)
     }

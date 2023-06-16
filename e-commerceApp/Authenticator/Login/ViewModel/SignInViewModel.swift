@@ -15,7 +15,7 @@ class SignInViewModel {
     
     weak var coordinator: AuthCoordinator?
     
-    
+    // setUp Google button
     @objc func googleSignInPressed() {
 
         guard let clientID = FirebaseApp.app()?.options.clientID else { fatalError("No client ID found in Firebase configuration") }

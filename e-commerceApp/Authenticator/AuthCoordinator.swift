@@ -23,6 +23,7 @@ class AuthCoordinator: Coordinator {
         goToMainAuthPage()
     }
     
+    // MARK: - SetUp navigate to main auth page
     func goToMainAuthPage() {
         let vc = MainAuthPageViewController()
         let viewModel = MainAuthViewModel()
@@ -31,6 +32,7 @@ class AuthCoordinator: Coordinator {
         navigationController.pushViewController(vc, animated: true)
     }
     
+    // MARK: - SetUp navigate to LogIn page
     func goToLogInPage() {
         let vc = SignInViewController()
         let viewModel = SignInViewModel()
@@ -39,6 +41,7 @@ class AuthCoordinator: Coordinator {
         navigationController.pushViewController(vc, animated: true)
     }
     
+    // MARK: - SetUp navigate to SignUp page
     func goToSignUpPage() {
         let vc = SignUpViewController()
         let viewModel = SignUpViewModel()

@@ -12,7 +12,7 @@ class ViewSetUp {
     
     weak var mainAuth: MainAuthPageViewController?
   
-   
+   // SetUp UI view elements
     let contentView: UIView = {
         
         let view = UIView()
@@ -95,6 +95,7 @@ class ViewSetUp {
         return button
     }()
     
+    // SetUp constraints
     func setUp() {
         mainAuth!.view.addSubview(contentView)
         contentView.addSubview(imageView)

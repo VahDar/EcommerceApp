@@ -11,10 +11,12 @@ class MainAuthViewModel {
     
     weak var coordinator: AuthCoordinator?
     
+    //SignUp button
     func goToSignUp() {
         coordinator?.goToSignUpPage()
     }
     
+    //SignIn button
     func goToSignIn() {
         coordinator?.goToLogInPage()
     }

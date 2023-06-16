@@ -13,6 +13,8 @@ class UIViewSignUp {
     weak var singUpVC: SignUpViewController?
     weak var singUpVM: SignUpViewModel?
     
+    
+    // SetUp UI elements
     let contentView: UIView = {
         
        let view = UIView()
@@ -51,20 +53,7 @@ class UIViewSignUp {
         textField.translatesAutoresizingMaskIntoConstraints = false
         return textField
     }()
-    
-//    let phoneTextField: UITextField = {
-//
-//        let textField = UITextField()
-//        textField.placeholder = "  Phone Number"
-//        textField.borderStyle = .none
-//        textField.layer.borderColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
-//        textField.layer.borderWidth = 1
-//        textField.layer.cornerRadius = 20
-//        textField.textContentType = .telephoneNumber
-//        textField.keyboardType = .phonePad
-//        textField.translatesAutoresizingMaskIntoConstraints = false
-//        return textField
-//    }()
+
     
     let mailTextField: UITextField = {
        
@@ -111,11 +100,11 @@ class UIViewSignUp {
         return button
     }()
     
+    // SetUp constraints
     func setUpUI() {
         singUpVC!.view.addSubview(contentView)
         contentView.addSubview(textLabel)
         contentView.addSubview(nameTextField)
-//        contentView.addSubview(phoneTextField)
         contentView.addSubview(mailTextField)
         contentView.addSubview(passwordTextField)
         contentView.addSubview(signUpButton)
@@ -136,11 +125,6 @@ class UIViewSignUp {
         nameTextField.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
         nameTextField.heightAnchor.constraint(equalToConstant: 35).isActive = true
         
-//        //setUp phoneTextFiled
-//        phoneTextField.topAnchor.constraint(equalTo: nameTextField.bottomAnchor, constant: 15).isActive = true
-//        phoneTextField.widthAnchor.constraint(equalToConstant: 300).isActive = true
-//        phoneTextField.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
-//        phoneTextField.heightAnchor.constraint(equalToConstant: 35).isActive = true
         
         //setUp phoneTextFiled
         mailTextField.topAnchor.constraint(equalTo: nameTextField.bottomAnchor, constant: 15).isActive = true
