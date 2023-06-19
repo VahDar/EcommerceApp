@@ -19,5 +19,23 @@ class UIViewMainPage {
         return view
     }()
     
+    let createNewModule: UIButton = {
+        let button = UIButton()
+        button.setTitle("Create folder", for: .normal)
+        button.backgroundColor = .white
+        button.layer.cornerRadius = 20
+        button.layer.borderWidth = 1
+        button.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        return button
+    }()
     
+    let myFolders: UIButton = {
+       let button = UIButton()
+        button.setTitle("Folders", for: .normal)
+    }()
+    
+    private let discriptionModelLabel: UILabel = {
+        let label = UILabel()
+        label.text = "start learning words"
+    }()
 }
