@@ -26,6 +26,13 @@ class UIViewMainPage {
         collection.translatesAutoresizingMaskIntoConstraints = false
     }()
     
+    let addButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("Add", for: .normal)
+        button.layer.cornerRadius = 25
+        button.translatesAutoresizingMaskIntoConstraints = false
+    }()
+    
     
     func setUpView() {
         mainVC?.view.addSubview(contentView)
