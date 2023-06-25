@@ -14,7 +14,7 @@ class UIViewMainPage {
     
     private let contentView: UIView = {
        let view = UIView()
-        view.backgroundColor = .white
+        view.backgroundColor = .gray
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -23,7 +23,10 @@ class UIViewMainPage {
         let flowLayout = UICollectionViewFlowLayout()
         flowLayout.scrollDirection = .vertical
         let collection = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
+        collection.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        collection.backgroundColor = .clear
         collection.translatesAutoresizingMaskIntoConstraints = false
+        return collection
     }()
     
     let addButton: UIButton = {
@@ -31,6 +34,7 @@ class UIViewMainPage {
         button.setTitle("Add", for: .normal)
         button.layer.cornerRadius = 25
         button.translatesAutoresizingMaskIntoConstraints = false
+        return button
     }()
     
     
@@ -52,8 +56,8 @@ class UIViewMainPage {
         collectionView.rightAnchor.constraint(equalTo: contentView.rightAnchor).isActive = true
         
         //setup button
-        addButton.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 25)
-        addButton.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -30)
+        addButton.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 25).isActive = true
+        addButton.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -30).isActive = true
         
     }
 }

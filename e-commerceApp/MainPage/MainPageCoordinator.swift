@@ -20,9 +20,15 @@ class MainPageCoordinator: Coordinator {
     }
     
     func start() {
-        <#code#>
+        goToMainPage()
     }
     
-    
+    func goToMainPage() {
+        let vc = MainPageViewController()
+        let viewModel = MainPageViewModel()
+        viewModel.coordinator = self
+        vc.viewModel = viewModel
+        navigationController.pushViewController(vc, animated: false)
+    }
     
 }

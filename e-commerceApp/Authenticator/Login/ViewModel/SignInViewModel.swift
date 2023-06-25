@@ -40,6 +40,8 @@ class SignInViewModel {
                 } else {
                     let firebaseUser = result?.user
                     print("User \(firebaseUser?.uid) signed in with email \(firebaseUser?.email ?? "unknown")")
+                    self.coordinator?.goToMainPage()
+                    
                 }
             }
         }

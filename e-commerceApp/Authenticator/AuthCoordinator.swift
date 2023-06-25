@@ -50,4 +50,12 @@ class AuthCoordinator: Coordinator {
         navigationController.pushViewController(vc, animated: true)
     }
     
+    func goToMainPage() {
+        let mainPageCoordinator = MainPageCoordinator(navigationController: navigationController)
+        mainPageCoordinator.parentCoordinator = self
+        children.append(mainPageCoordinator)
+        mainPageCoordinator.start()
+    }
+    
+    
 }
