@@ -20,6 +20,11 @@ class MainAuthPageViewController: UIViewController {
         logInPressed()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
     //SignUp button pressed
     func signUpPressed() {
         viewSetUp.signUpButton.addTarget(self, action: #selector(signUpButton), for: .touchUpInside)

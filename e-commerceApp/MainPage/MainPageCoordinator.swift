@@ -31,15 +31,11 @@ class MainPageCoordinator: Coordinator {
     }
     
     func logOut() {
-        let vc = SignUpViewController()
-        let viewModel = SignUpViewModel()
-        viewModel.coordinator = self
-        vc.viewModel = viewModel
-        navigationController.pushViewController(vc, animated: true)
-//        let appCoordinator = AppCoordinator(navigationController: navigationController)
-//        appCoordinator.parentCoordinator = self
-//        children.append(appCoordinator)
-//        appCoordinator.start()
+        
+        let appCoordinator = AppCoordinator(navigationController: navigationController)
+        appCoordinator.parentCoordinator = self
+        children.append(appCoordinator)
+        appCoordinator.start()
        
     }
     

@@ -24,6 +24,11 @@ class SignInViewController: UIViewController {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
 //    func signInWithFacebook() {
 //        uiSignIn.facebookButton.addTarget(self, action: #selector(faceBookSignInPressed), for: .touchUpInside)
 //    }

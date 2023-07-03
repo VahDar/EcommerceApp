@@ -20,6 +20,11 @@ class SignUpViewController: UIViewController {
         signUpCreateUser()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
     // MARK: - set up Register button
     
     func signUpCreateUser() {
