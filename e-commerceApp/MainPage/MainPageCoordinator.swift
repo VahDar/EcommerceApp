@@ -9,10 +9,9 @@ import Foundation
 import UIKit
 
 class MainPageCoordinator: Coordinator {
+    
     var parentCoordinator: Coordinator?
-    
     var children: [Coordinator] = []
-    
     var navigationController: UINavigationController
     
     init(navigationController: UINavigationController) {
@@ -29,6 +28,19 @@ class MainPageCoordinator: Coordinator {
         viewModel.coordinator = self
         vc.viewModel = viewModel
         navigationController.pushViewController(vc, animated: false)
+    }
+    
+    func logOut() {
+        let vc = SignUpViewController()
+        let viewModel = SignUpViewModel()
+        viewModel.coordinator = self
+        vc.viewModel = viewModel
+        navigationController.pushViewController(vc, animated: true)
+//        let appCoordinator = AppCoordinator(navigationController: navigationController)
+//        appCoordinator.parentCoordinator = self
+//        children.append(appCoordinator)
+//        appCoordinator.start()
+       
     }
     
 }

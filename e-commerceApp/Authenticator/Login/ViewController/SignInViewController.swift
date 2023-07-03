@@ -54,19 +54,18 @@ class SignInViewController: UIViewController {
         singInVMEmailAndPass.signIn(email: email, password: password) { [weak self] success, error in
             guard let self = self else {return}
             
-            var message: String = ""
-            if success {
-                message = "User was successfully logged in."
-                let alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
-                alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-                present(alertController, animated: true, completion: nil)
-            } else {
-                message = "There was an error"
-                let alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
-                alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-                present(alertController, animated: true, completion: nil)
+            var message = success ? "User was successfully logged in." : "There was an error"
+            let alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+            let actionOk = UIAlertAction(title: "Ok", style: .default) {
+                [weak self] _ in
+                guard let self = self else {return}
+                self.viewModel.coordinator?.goToMainPage()
             }
             
+            let cancelAlert = UIAlertAction(title: "Cancel", style: .cancel)
+            let action = success ? actionOk : cancelAlert
+            alertController.addAction(action)
+            present(alertController, animated: true, completion: nil)
         }
     }
 

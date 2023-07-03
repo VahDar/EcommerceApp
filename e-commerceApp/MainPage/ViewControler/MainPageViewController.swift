@@ -9,7 +9,7 @@ import UIKit
 
 class MainPageViewController: UIViewController {
     
-    var viewModel: MainPageViewModel?
+    var viewModel: MainPageViewModel!
     let uiView = UIViewMainPage()
     let newFolder = [Any]()
     
@@ -17,9 +17,18 @@ class MainPageViewController: UIViewController {
         super.viewDidLoad()
         uiView.mainVC = self
         uiView.setUpView()
-        
+        signOutButtonPressed()
 
     }
+    
+    func signOutButtonPressed() {
+        uiView.signOutButton.addTarget(self, action: #selector(signOutPressed), for: .touchUpInside)
+    }
+    
+    @objc func signOutPressed() {
+        viewModel?.logOutButton()
+    }
+    
 
 }
 extension MainPageViewController: UICollectionViewDelegate {
