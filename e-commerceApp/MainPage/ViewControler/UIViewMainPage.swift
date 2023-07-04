@@ -19,12 +19,12 @@ class UIViewMainPage {
         return view
     }()
     
-    private let collectionView: UICollectionView = {
+    let collectionView: UICollectionView = {
         let flowLayout = UICollectionViewFlowLayout()
         flowLayout.scrollDirection = .vertical
         let collection = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
         collection.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
-        collection.backgroundColor = .white
+        collection.backgroundColor = .gray
         collection.translatesAutoresizingMaskIntoConstraints = false
         return collection
     }()
@@ -51,7 +51,7 @@ class UIViewMainPage {
     
     func setUpView() {
         mainVC?.view.addSubview(contentView)
-//        contentView.addSubview(collectionView)
+        contentView.addSubview(collectionView)
         contentView.addSubview(addButton)
         contentView.addSubview(signOutButton)
         
@@ -62,10 +62,10 @@ class UIViewMainPage {
         contentView.rightAnchor.constraint(equalTo: (mainVC?.view.rightAnchor)!).isActive = true
         
         //setup collectionview
-//        collectionView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 100).isActive = true
-//        collectionView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
-//        collectionView.leftAnchor.constraint(equalTo: contentView.leftAnchor).isActive = true
-//        collectionView.rightAnchor.constraint(equalTo: contentView.rightAnchor).isActive = true
+        collectionView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 250).isActive = true
+        collectionView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
+        collectionView.leftAnchor.constraint(equalTo: contentView.leftAnchor).isActive = true
+        collectionView.rightAnchor.constraint(equalTo: contentView.rightAnchor).isActive = true
         
         //setup button
         addButton.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 90).isActive = true
@@ -77,3 +77,4 @@ class UIViewMainPage {
         signOutButton.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -30).isActive = true
     }
 }
+
