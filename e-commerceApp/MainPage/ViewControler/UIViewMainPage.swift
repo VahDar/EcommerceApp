@@ -23,8 +23,10 @@ class UIViewMainPage {
         let flowLayout = UICollectionViewFlowLayout()
         flowLayout.scrollDirection = .vertical
         let collection = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
-        collection.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        collection.register(MainPageCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
         collection.backgroundColor = .gray
+        
+       
         collection.translatesAutoresizingMaskIntoConstraints = false
         return collection
     }()

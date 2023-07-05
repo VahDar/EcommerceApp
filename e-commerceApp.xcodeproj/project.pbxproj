@@ -27,6 +27,7 @@
 		FCB8B9052A34CD8500CDB3AF /* UIViewSignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB8B9042A34CD8500CDB3AF /* UIViewSignUp.swift */; };
 		FCB8B9072A34CDB800CDB3AF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB8B9062A34CDB800CDB3AF /* SignUpViewController.swift */; };
 		FCB8B9092A34D08800CDB3AF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FCB8B9082A34D08800CDB3AF /* GoogleService-Info.plist */; };
+		FCBA887A2A547D0B00FE3DF7 /* MainPageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBA88792A547D0B00FE3DF7 /* MainPageCollectionViewCell.swift */; };
 		FCC4F65D2A48768E00140FCC /* MainPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC4F65C2A48768E00140FCC /* MainPageViewModel.swift */; };
 		FCEB2EFE2A3C67BB00ECF2DC /* MainPageCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEB2EFD2A3C67BB00ECF2DC /* MainPageCoordinator.swift */; };
 		FCEB2F012A3C685F00ECF2DC /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEB2F002A3C685F00ECF2DC /* MainPageViewController.swift */; };
@@ -58,6 +59,7 @@
 		FCB8B9042A34CD8500CDB3AF /* UIViewSignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewSignUp.swift; sourceTree = "<group>"; };
 		FCB8B9062A34CDB800CDB3AF /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		FCB8B9082A34D08800CDB3AF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FCBA88792A547D0B00FE3DF7 /* MainPageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageCollectionViewCell.swift; sourceTree = "<group>"; };
 		FCC4F65C2A48768E00140FCC /* MainPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewModel.swift; sourceTree = "<group>"; };
 		FCEB2EFD2A3C67BB00ECF2DC /* MainPageCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageCoordinator.swift; sourceTree = "<group>"; };
 		FCEB2F002A3C685F00ECF2DC /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
@@ -251,10 +253,19 @@
 			path = SignUpAuthManager;
 			sourceTree = "<group>";
 		};
+		FCBA88762A547C7100FE3DF7 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				FCBA88792A547D0B00FE3DF7 /* MainPageCollectionViewCell.swift */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
 		FCEB2EFC2A3C679900ECF2DC /* MainPage */ = {
 			isa = PBXGroup;
 			children = (
 				FCEB2EFD2A3C67BB00ECF2DC /* MainPageCoordinator.swift */,
+				FCBA88762A547C7100FE3DF7 /* CollectionViewCell */,
 				FCEB2EFF2A3C684200ECF2DC /* ViewControler */,
 			);
 			path = MainPage;
@@ -402,6 +413,7 @@
 				FCB8B8FB2A34CC7B00CDB3AF /* SignInViewController.swift in Sources */,
 				FCB8B8ED2A34CAF600CDB3AF /* MainAuthPageViewController.swift in Sources */,
 				FCB8B8F22A34CB5F00CDB3AF /* MainAuthViewModel.swift in Sources */,
+				FCBA887A2A547D0B00FE3DF7 /* MainPageCollectionViewCell.swift in Sources */,
 				FCB8B8EF2A34CB0A00CDB3AF /* ViewSetUp.swift in Sources */,
 				FCEB2F012A3C685F00ECF2DC /* MainPageViewController.swift in Sources */,
 				FCB8B8CD2A34C7A200CDB3AF /* SceneDelegate.swift in Sources */,

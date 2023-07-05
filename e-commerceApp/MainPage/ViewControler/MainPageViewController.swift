@@ -13,14 +13,15 @@ class MainPageViewController: UIViewController {
     
     var viewModel: MainPageViewModel!
     let uiView = UIViewMainPage()
-    let newFolder = ["one", "two", "three"]
+    let newFolder = ["1", "2", "3", "4"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         uiView.mainVC = self
         uiView.setUpView()
         signOutButtonPressed()
-       
+        uiView.collectionView.delegate = self
+        uiView.collectionView.dataSource = self
         
     }
     
@@ -48,7 +49,11 @@ class MainPageViewController: UIViewController {
 
 }
 extension MainPageViewController: UICollectionViewDelegate {
-
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+           
+        
+        return CGSize(width: uiView.collectionView.frame.width*2, height: uiView.collectionView.frame.height*3)
+       }
 }
 extension MainPageViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -56,10 +61,14 @@ extension MainPageViewController: UICollectionViewDataSource {
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! UICollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MainPageCollectionViewCell
+        
+        cell.background = newFolder[indexPath.row]
         
         return cell
     }
+    
+    
 
 
 }
