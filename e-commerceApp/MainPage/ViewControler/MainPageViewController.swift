@@ -63,7 +63,7 @@ extension MainPageViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MainPageCollectionViewCell
         
-        cell.background = newFolder[indexPath.row]
+        cell.background =
         
         return cell
     }
