@@ -55,19 +55,19 @@ extension MainPageViewController: UICollectionViewDelegate {
         return CGSize(width: uiView.collectionView.frame.width*2, height: uiView.collectionView.frame.height*3)
        }
 }
-extension MainPageViewController: UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return newFolder.count
-    }
+//extension MainPageViewController: UICollectionViewDataSource {
+//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+//        return newFolder.count
+//    }
 
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MainPageCollectionViewCell
-        
-        cell.background =
-        
-        return cell
-    }
-    
+//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MainPageCollectionViewCell
+//
+//        cell.background =
+//
+//        return cell
+//    }
+//
     
 
 
