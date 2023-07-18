@@ -48,27 +48,26 @@ class MainPageViewController: UIViewController {
     
 
 }
-//extension MainPageViewController: UICollectionViewDelegate {
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//           
-//        
-//        return CGSize(width: uiView.collectionView.frame.width*2, height: uiView.collectionView.frame.height*3)
-//       }
-//}
-//extension MainPageViewController: UICollectionViewDataSource {
-//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        return newFolder.count
-//    }
+extension MainPageViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+           
+        return CGSize(width: uiView.collectionView.frame.width/1, height: uiView.collectionView.frame.height/4)
+       }
+}
+extension MainPageViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return newFolder.count
+    }
 
-//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MainPageCollectionViewCell
-//
-//        cell.background =
-//
-//        return cell
-//    }
-//
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! MainPageCollectionViewCell
+
+        cell.imageView.image = UIImage(named: newFolder[indexPath.row])
+
+        return cell
+    }
+
     
 
-//}
+}
 

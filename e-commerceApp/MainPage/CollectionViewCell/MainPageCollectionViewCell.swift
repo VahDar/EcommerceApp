@@ -9,37 +9,34 @@ import UIKit
 
 class MainPageCollectionViewCell: UICollectionViewCell {
     
-    var uiView: UIViewMainPage? 
+    var uiView: UIViewMainPage? {
+        didSet {
+            guard let uiView = uiView else { return }
+        }
+    }
     
-    let background: UIView = {
-        let view = UIView()
-        view.backgroundColor = .black
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
+    let imageView: UIImageView = {
+        let image = UIImageView()
+        image.translatesAutoresizingMaskIntoConstraints = false
+        image.contentMode = .scaleToFill
+        image.layer.borderWidth = 2
+        image.layer.cornerRadius = 15
+        image.layer.borderColor = UIColor.black.cgColor
+        image.clipsToBounds = true
+        return image
     }()
     
     
-    let backgroundCell: UILabel = {
-        let view = UILabel()
-        view.backgroundColor = .green
-        view.layer.cornerRadius = 15
-        view.translatesAutoresizingMaskIntoConstraints = false
-        return view
-    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
-        addSubview(background)
-        background.addSubview(backgroundCell)
+        addSubview(imageView)
         
-        background.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
-        background.leadingAnchor.constraint(equalTo: contentView.leadingAnchor).isActive = true
-        background.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive = true
-        background.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
+        imageView.topAnchor.constraint(equalTo: topAnchor).isActive = true
+        imageView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
+        imageView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
+        imageView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
         
-        backgroundCell.topAnchor.constraint(equalTo: background.topAnchor).isActive = true
-        backgroundCell.leadingAnchor.constraint(equalTo: background.leadingAnchor).isActive = true
-        backgroundCell.trailingAnchor.constraint(equalTo: background.trailingAnchor).isActive = true
-        backgroundCell.bottomAnchor.constraint(equalTo: background.bottomAnchor).isActive = true
     }
     
     required init?(coder: NSCoder) {

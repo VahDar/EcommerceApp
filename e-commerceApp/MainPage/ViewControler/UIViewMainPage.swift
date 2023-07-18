@@ -24,9 +24,7 @@ class UIViewMainPage {
         flowLayout.scrollDirection = .vertical
         let collection = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
         collection.register(MainPageCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
-        collection.backgroundColor = .gray
-        
-       
+        collection.backgroundColor = .white
         collection.translatesAutoresizingMaskIntoConstraints = false
         return collection
     }()
@@ -66,8 +64,8 @@ class UIViewMainPage {
         //setup collectionview
         collectionView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 250).isActive = true
         collectionView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
-        collectionView.leftAnchor.constraint(equalTo: contentView.leftAnchor).isActive = true
-        collectionView.rightAnchor.constraint(equalTo: contentView.rightAnchor).isActive = true
+        collectionView.leftAnchor.constraint(equalTo: contentView.leftAnchor, constant: 15).isActive = true
+        collectionView.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -15).isActive = true
         
         //setup button
         addButton.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 90).isActive = true
