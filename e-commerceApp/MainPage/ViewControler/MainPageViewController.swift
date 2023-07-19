@@ -49,10 +49,10 @@ class MainPageViewController: UIViewController {
 
 }
 extension MainPageViewController: UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-           
-        return CGSize(width: uiView.collectionView.frame.width/1, height: uiView.collectionView.frame.height/4)
-       }
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//           
+//        return CGSize(width: uiView.collectionView.frame.width/1, height: uiView.collectionView.frame.height/4)
+//       }
 }
 extension MainPageViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
