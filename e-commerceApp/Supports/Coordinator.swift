@@ -18,10 +18,8 @@ protocol Coordinator: AnyObject {
 }
 
 extension Coordinator {
-    func popController() {
-        navigationController.popViewController(animated: true)
-    }
-    
+    /// Removing a coordinator inside a children. This call is importent to prevent memory leak.
+    /// - Parameter coordinator: Coordinator tha finished
     func childDidFinish(_ coordinator: Coordinator) {
         //Call this if a coordinator is done.
         for (index, child) in children.enumerated() {

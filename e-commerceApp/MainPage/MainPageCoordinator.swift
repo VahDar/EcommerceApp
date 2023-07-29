@@ -10,7 +10,7 @@ import UIKit
 
 class MainPageCoordinator: Coordinator {
     
-    var parentCoordinator: Coordinator?
+    weak var parentCoordinator: Coordinator?
     var children: [Coordinator] = []
     var navigationController: UINavigationController
     
@@ -19,6 +19,7 @@ class MainPageCoordinator: Coordinator {
     }
     
     func start() {
+        print("MainPageCoordinator start")
         goToMainPage()
     }
     
@@ -27,16 +28,23 @@ class MainPageCoordinator: Coordinator {
         let viewModel = MainPageViewModel()
         viewModel.coordinator = self
         vc.viewModel = viewModel
-        navigationController.pushViewController(vc, animated: false)
+        navigationController.setViewControllers([vc], animated: false)
     }
     
     func logOut() {
         
+       
+        
         let appCoordinator = AppCoordinator(navigationController: navigationController)
         appCoordinator.parentCoordinator = self
         children.append(appCoordinator)
-        appCoordinator.start()
+        appCoordinator.goToAuth()
+        
        
+    }
+    
+    deinit {
+        print("MainPageCoordinator deinit")
     }
     
 }

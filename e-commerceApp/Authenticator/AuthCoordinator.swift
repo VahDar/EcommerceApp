@@ -9,10 +9,8 @@ import Foundation
 import UIKit
 
 class AuthCoordinator: Coordinator {
-    var parentCoordinator: Coordinator?
-    
+    weak var parentCoordinator: Coordinator?
     var children: [Coordinator] = []
-    
     var navigationController: UINavigationController
     
     init(navigationController: UINavigationController) {
@@ -20,16 +18,22 @@ class AuthCoordinator: Coordinator {
     }
     
     func start() {
+        print("AuthCoordinator start")
         goToMainAuthPage()
     }
     
     // MARK: - SetUp navigate to main auth page
     func goToMainAuthPage() {
+        // Instantiate ViewController
         let vc = MainAuthPageViewController()
+        // Instantiate ViewModel
         let viewModel = MainAuthViewModel()
+        // Set the coordinator to ViewModel
         viewModel.coordinator = self
+        // Set the ViewModel to ViewController
         vc.viewModel = viewModel
-        navigationController.pushViewController(vc, animated: true)
+        // Push it
+        navigationController.setViewControllers([vc], animated: true)
     }
     
     // MARK: - SetUp navigate to LogIn page
@@ -38,7 +42,7 @@ class AuthCoordinator: Coordinator {
         let viewModel = SignInViewModel()
         viewModel.coordinator = self
         vc.viewModel = viewModel
-        navigationController.pushViewController(vc, animated: true)
+        navigationController.setViewControllers([vc], animated: true)
     }
     
     // MARK: - SetUp navigate to SignUp page
@@ -47,7 +51,7 @@ class AuthCoordinator: Coordinator {
         let viewModel = SignUpViewModel()
         viewModel.coordinator = self
         vc.viewModel = viewModel
-        navigationController.pushViewController(vc, animated: true)
+        navigationController.setViewControllers([vc], animated: true)
     }
     
     func goToMainPage() {
@@ -57,5 +61,7 @@ class AuthCoordinator: Coordinator {
         mainPageCoordinator.start()
     }
     
-    
+    deinit {
+        print("AuthCoordinator finish")
+    }
 }
