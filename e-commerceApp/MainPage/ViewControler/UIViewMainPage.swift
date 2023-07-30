@@ -31,8 +31,11 @@ class UIViewMainPage {
     
     let addButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Add", for: .normal)
-        button.layer.cornerRadius = 25
+        button.setTitle("Create module", for: .normal)
+        button.layer.borderWidth = 1
+        button.layer.borderColor = UIColor.black.cgColor
+        button.setTitleColor(.black, for: .normal)
+        button.layer.cornerRadius = 20
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -40,8 +43,8 @@ class UIViewMainPage {
     let signOutButton: UIButton = {
         let button = UIButton()
         button.setTitle("Sign Out", for: .normal)
-        button.layer.borderWidth = 1
-        button.layer.borderColor = UIColor.black.cgColor
+//        button.layer.borderWidth = 1
+//        button.layer.borderColor = UIColor.black.cgColor
         button.setTitleColor(.black, for: .normal)
         button.layer.cornerRadius = 20
         button.backgroundColor = .white
@@ -68,12 +71,12 @@ class UIViewMainPage {
         collectionView.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -15).isActive = true
         
         //setup button
-        addButton.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 90).isActive = true
+        addButton.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 70).isActive = true
         addButton.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -30).isActive = true
         
         //setup signOutButton
         
-        signOutButton.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 60).isActive = true
+        signOutButton.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 35).isActive = true
         signOutButton.rightAnchor.constraint(equalTo: contentView.rightAnchor, constant: -30).isActive = true
     }
 }

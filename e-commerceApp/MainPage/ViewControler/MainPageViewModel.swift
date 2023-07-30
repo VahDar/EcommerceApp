@@ -16,4 +16,8 @@ class MainPageViewModel {
         
     }
     
+    func addModuleButton() {
+        coordinator?.goToModulePage()
+    }
+    
 }

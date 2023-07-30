@@ -31,6 +31,15 @@ class MainPageCoordinator: Coordinator {
         navigationController.setViewControllers([vc], animated: false)
     }
     
+    func goToModulePage() {
+        let vc = AddModuleViewController()
+        let viewModel = ModuleViewModel()
+        viewModel.coordinator = self
+        vc.viewModel = viewModel
+        navigationController.setViewControllers([vc], animated: true)
+    }
+    
+    
     func logOut() {
         
        

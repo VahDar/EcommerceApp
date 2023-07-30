@@ -29,6 +29,8 @@
 		FCB8B9092A34D08800CDB3AF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FCB8B9082A34D08800CDB3AF /* GoogleService-Info.plist */; };
 		FCBA887A2A547D0B00FE3DF7 /* MainPageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBA88792A547D0B00FE3DF7 /* MainPageCollectionViewCell.swift */; };
 		FCC4F65D2A48768E00140FCC /* MainPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC4F65C2A48768E00140FCC /* MainPageViewModel.swift */; };
+		FCD3EF742A769AF100681405 /* AddModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD3EF732A769AF100681405 /* AddModuleViewController.swift */; };
+		FCD3EF762A769B3200681405 /* ModuleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD3EF752A769B3200681405 /* ModuleViewModel.swift */; };
 		FCEB2EFE2A3C67BB00ECF2DC /* MainPageCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEB2EFD2A3C67BB00ECF2DC /* MainPageCoordinator.swift */; };
 		FCEB2F012A3C685F00ECF2DC /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEB2F002A3C685F00ECF2DC /* MainPageViewController.swift */; };
 		FCEB2F032A3C689A00ECF2DC /* UIViewMainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEB2F022A3C689A00ECF2DC /* UIViewMainPage.swift */; };
@@ -61,6 +63,8 @@
 		FCB8B9082A34D08800CDB3AF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FCBA88792A547D0B00FE3DF7 /* MainPageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageCollectionViewCell.swift; sourceTree = "<group>"; };
 		FCC4F65C2A48768E00140FCC /* MainPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewModel.swift; sourceTree = "<group>"; };
+		FCD3EF732A769AF100681405 /* AddModuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddModuleViewController.swift; sourceTree = "<group>"; };
+		FCD3EF752A769B3200681405 /* ModuleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleViewModel.swift; sourceTree = "<group>"; };
 		FCEB2EFD2A3C67BB00ECF2DC /* MainPageCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageCoordinator.swift; sourceTree = "<group>"; };
 		FCEB2F002A3C685F00ECF2DC /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		FCEB2F022A3C689A00ECF2DC /* UIViewMainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewMainPage.swift; sourceTree = "<group>"; };
@@ -275,6 +279,8 @@
 			isa = PBXGroup;
 			children = (
 				FCEB2F002A3C685F00ECF2DC /* MainPageViewController.swift */,
+				FCD3EF752A769B3200681405 /* ModuleViewModel.swift */,
+				FCD3EF732A769AF100681405 /* AddModuleViewController.swift */,
 				FCEB2F022A3C689A00ECF2DC /* UIViewMainPage.swift */,
 				FCC4F65C2A48768E00140FCC /* MainPageViewModel.swift */,
 			);
@@ -397,6 +403,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCB8B8E32A34C9ED00CDB3AF /* AppCoordinator.swift in Sources */,
+				FCD3EF762A769B3200681405 /* ModuleViewModel.swift in Sources */,
 				FCB8B8E02A34C85400CDB3AF /* Extension.swift in Sources */,
 				FCEB2EFE2A3C67BB00ECF2DC /* MainPageCoordinator.swift in Sources */,
 				FCEB2F032A3C689A00ECF2DC /* UIViewMainPage.swift in Sources */,
@@ -414,6 +421,7 @@
 				FCB8B8ED2A34CAF600CDB3AF /* MainAuthPageViewController.swift in Sources */,
 				FCB8B8F22A34CB5F00CDB3AF /* MainAuthViewModel.swift in Sources */,
 				FCBA887A2A547D0B00FE3DF7 /* MainPageCollectionViewCell.swift in Sources */,
+				FCD3EF742A769AF100681405 /* AddModuleViewController.swift in Sources */,
 				FCB8B8EF2A34CB0A00CDB3AF /* ViewSetUp.swift in Sources */,
 				FCEB2F012A3C685F00ECF2DC /* MainPageViewController.swift in Sources */,
 				FCB8B8CD2A34C7A200CDB3AF /* SceneDelegate.swift in Sources */,

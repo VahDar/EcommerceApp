@@ -20,6 +20,7 @@ class MainPageViewController: UIViewController {
         uiView.mainVC = self
         uiView.setUpView()
         signOutButtonPressed()
+        createModuleButtonPressed()
         uiView.collectionView.delegate = self
         uiView.collectionView.dataSource = self
         
@@ -46,7 +47,14 @@ class MainPageViewController: UIViewController {
         
     }
     
+    func createModuleButtonPressed() {
+        uiView.addButton.addTarget(self, action: #selector(createModulePressed), for: .touchUpInside)
+    }
 
+    @objc func createModulePressed() {
+        viewModel?.addModuleButton()
+    }
+    
 }
 extension MainPageViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
