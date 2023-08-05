@@ -9,7 +9,8 @@ target 'e-commerceApp' do
 	pod 'FirebaseStorage'
 	pod 'GoogleSignIn'
 	pod 'GoogleSignInSwift'
-	
+  pod 'RealmSwift'
+  
 end
 
 

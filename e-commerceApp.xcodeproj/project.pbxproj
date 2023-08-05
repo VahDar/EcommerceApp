@@ -31,6 +31,7 @@
 		FCC4F65D2A48768E00140FCC /* MainPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC4F65C2A48768E00140FCC /* MainPageViewModel.swift */; };
 		FCD3EF742A769AF100681405 /* AddModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD3EF732A769AF100681405 /* AddModuleViewController.swift */; };
 		FCD3EF762A769B3200681405 /* ModuleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD3EF752A769B3200681405 /* ModuleViewModel.swift */; };
+		FCDCDDEF2A7E4C2D0074CBE5 /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCDCDDEE2A7E4C2D0074CBE5 /* RealmModel.swift */; };
 		FCEB2EFE2A3C67BB00ECF2DC /* MainPageCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEB2EFD2A3C67BB00ECF2DC /* MainPageCoordinator.swift */; };
 		FCEB2F012A3C685F00ECF2DC /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEB2F002A3C685F00ECF2DC /* MainPageViewController.swift */; };
 		FCEB2F032A3C689A00ECF2DC /* UIViewMainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEB2F022A3C689A00ECF2DC /* UIViewMainPage.swift */; };
@@ -65,6 +66,7 @@
 		FCC4F65C2A48768E00140FCC /* MainPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewModel.swift; sourceTree = "<group>"; };
 		FCD3EF732A769AF100681405 /* AddModuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddModuleViewController.swift; sourceTree = "<group>"; };
 		FCD3EF752A769B3200681405 /* ModuleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleViewModel.swift; sourceTree = "<group>"; };
+		FCDCDDEE2A7E4C2D0074CBE5 /* RealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
 		FCEB2EFD2A3C67BB00ECF2DC /* MainPageCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageCoordinator.swift; sourceTree = "<group>"; };
 		FCEB2F002A3C685F00ECF2DC /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		FCEB2F022A3C689A00ECF2DC /* UIViewMainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewMainPage.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 		FCB8B8C92A34C7A200CDB3AF /* e-commerceApp */ = {
 			isa = PBXGroup;
 			children = (
+				FCDCDDED2A7E4C1B0074CBE5 /* Models */,
 				FCEB2EFC2A3C679900ECF2DC /* MainPage */,
 				FCB8B8E72A34CA5000CDB3AF /* Authenticator */,
 				FCB8B8E42A34CA0E00CDB3AF /* Supports */,
@@ -263,6 +266,14 @@
 				FCBA88792A547D0B00FE3DF7 /* MainPageCollectionViewCell.swift */,
 			);
 			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		FCDCDDED2A7E4C1B0074CBE5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FCDCDDEE2A7E4C2D0074CBE5 /* RealmModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		FCEB2EFC2A3C679900ECF2DC /* MainPage */ = {
@@ -415,6 +426,7 @@
 				FCB8B9032A34CD6100CDB3AF /* SignUpViewModel.swift in Sources */,
 				FCB8B8F72A34CC0700CDB3AF /* SignInViewModel.swift in Sources */,
 				FCB8B8E92A34CA6E00CDB3AF /* AuthCoordinator.swift in Sources */,
+				FCDCDDEF2A7E4C2D0074CBE5 /* RealmModel.swift in Sources */,
 				FCC4F65D2A48768E00140FCC /* MainPageViewModel.swift in Sources */,
 				FCB8B9072A34CDB800CDB3AF /* SignUpViewController.swift in Sources */,
 				FCB8B8FB2A34CC7B00CDB3AF /* SignInViewController.swift in Sources */,
