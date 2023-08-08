@@ -11,7 +11,7 @@ import UIKit
 class SignUpViewModel {
     
     weak var coordinator: AuthCoordinator?
-    let uiView = UIViewSignUp()
+    let uiView = SignUpUIView()
     
     func registerUser() {
       

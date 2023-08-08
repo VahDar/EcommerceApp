@@ -10,7 +10,7 @@ import UIKit
 import GoogleSignIn
 import GoogleSignInSwift
 
-class UIViewSignIn {
+class SignInUIView {
     
     var signInVC: SignInViewController?
     

@@ -9,5 +9,6 @@ import Foundation
 import RealmSwift
 
 class RealmModel: Object {
-    @Persisted var title: String = ""
+    @Persisted(primaryKey: true) var id: Int
+    @Persisted var title: String?
 }

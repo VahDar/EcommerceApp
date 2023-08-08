@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class UIViewSignUp {
+class SignUpUIView {
     
     weak var singUpVC: SignUpViewController?
     weak var singUpVM: SignUpViewModel?

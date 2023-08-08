@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class UIViewMainPage {
+class MainPageUIView {
     
     var mainVC: MainPageViewController?
     

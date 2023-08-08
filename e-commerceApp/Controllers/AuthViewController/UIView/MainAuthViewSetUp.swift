@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class ViewSetUp {
+class MainAuthViewSetUp {
     
     weak var mainAuth: MainAuthPageViewController?
   

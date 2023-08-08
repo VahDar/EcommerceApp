@@ -9,7 +9,7 @@ import UIKit
 
 class MainPageCollectionViewCell: UICollectionViewCell {
     
-    var uiView: UIViewMainPage? {
+    var uiView: MainPageUIView? {
         didSet {
             guard let uiView = uiView else { return }
         }
