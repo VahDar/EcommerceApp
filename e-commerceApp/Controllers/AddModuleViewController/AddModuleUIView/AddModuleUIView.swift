@@ -61,5 +61,14 @@ class AddModuleUIView {
         contentView.addSubview(newWordTextField)
         contentView.addSubview(descriptionTextField)
         contentView.addSubview(saveButton)
+        
+        contentView.topAnchor.constraint(equalTo: moduleVC!.view.topAnchor).isActive = true
+        contentView.bottomAnchor.constraint(equalTo: moduleVC!.view.bottomAnchor).isActive = true
+        contentView.leadingAnchor.constraint(equalTo: moduleVC!.view.leadingAnchor).isActive = true
+        contentView.trailingAnchor.constraint(equalTo: moduleVC!.view.trailingAnchor).isActive = true
+        
+        nameModuleTextField.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 15).isActive = true
+        nameModuleTextField.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20).isActive = true
+        nameModuleTextField.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: -20).isActive = true
     }
 }
