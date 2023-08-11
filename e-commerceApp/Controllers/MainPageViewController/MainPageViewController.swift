@@ -12,7 +12,7 @@ import FirebaseAuth
 class MainPageViewController: UIViewController {
     
     var viewModel: MainPageViewModel!
-    let uiView = UIViewMainPage()
+    let uiView = MainPageUIView()
     let newFolder = ["1", "2", "3", "4"]
     
     override func viewDidLoad() {

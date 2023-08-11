@@ -9,7 +9,7 @@ import UIKit
 
 class MainAuthPageViewController: UIViewController {
 
-    let viewSetUp = ViewSetUp()
+    let viewSetUp = MainAuthViewSetUp()
     var viewModel: MainAuthViewModel!
     
     override func viewDidLoad() {

@@ -12,7 +12,7 @@ import GoogleSignInSwift
 
 class SignInViewController: UIViewController {
 
-    let uiSignIn = UIViewSignIn()
+    let uiSignIn = SignInUIView()
     var viewModel: SignInViewModel!
     
     override func viewDidLoad() {

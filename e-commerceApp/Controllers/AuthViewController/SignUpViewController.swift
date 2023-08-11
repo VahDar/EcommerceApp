@@ -9,7 +9,7 @@ import UIKit
 
 class SignUpViewController: UIViewController {
     
-    let uiView = UIViewSignUp()
+    let uiView = SignUpUIView()
     var viewModel: SignUpViewModel?
     
     
