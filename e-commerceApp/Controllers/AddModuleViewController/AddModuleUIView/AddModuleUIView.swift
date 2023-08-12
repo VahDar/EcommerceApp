@@ -61,12 +61,25 @@ class AddModuleUIView {
         return button
     }()
     
+    let addNewWord: UIButton = {
+        let button = UIButton()
+        button.setTitle("Add new word", for: .normal)
+        button.setTitleColor(.white, for: .normal)
+        button.backgroundColor = .black
+        button.layer.cornerRadius = 15
+        let boldFont = UIFont.boldSystemFont(ofSize: 20)
+        button.titleLabel?.font = boldFont
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+    
     func setUpUIModule() {
         moduleVC!.view.addSubview(contentView)
         contentView.addSubview(nameModuleTextField)
         contentView.addSubview(newWordTextField)
         contentView.addSubview(descriptionTextField)
         contentView.addSubview(saveButton)
+        contentView.addSubview(addNewWord)
         
         contentView.topAnchor.constraint(equalTo: moduleVC!.view.topAnchor).isActive = true
         contentView.bottomAnchor.constraint(equalTo: moduleVC!.view.bottomAnchor).isActive = true
@@ -92,5 +105,10 @@ class AddModuleUIView {
         saveButton.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -30).isActive = true
         saveButton.widthAnchor.constraint(equalToConstant: 75).isActive = true
         saveButton.heightAnchor.constraint(equalToConstant: 30).isActive = true
+        
+        addNewWord.bottomAnchor.constraint(equalTo: nameModuleTextField.topAnchor, constant: -25).isActive = true
+        addNewWord.centerXAnchor.constraint(equalTo: contentView.centerXAnchor).isActive = true
+        addNewWord.widthAnchor.constraint(equalToConstant: 120).isActive = true
+        addNewWord.heightAnchor.constraint(equalToConstant: 30).isActive = true
     }
 }
