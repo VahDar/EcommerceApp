@@ -10,13 +10,13 @@ import UIKit
 class AddModuleViewController: UIViewController {
 
     var viewModel: ModuleViewModel!
-    var uiView = AddModuleUIView()
+//    var uiView = AddModuleUIView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        uiView.moduleVC = self
-        uiView.setUpUIModule()
+//        uiView.moduleVC = self
+//        uiView.setUpUIModule()
     }
     
 
