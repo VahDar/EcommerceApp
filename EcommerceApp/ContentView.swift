@@ -34,6 +34,7 @@ struct ContentView: View {
                     Capsule().stroke(lineWidth: 2)
                 )
             }
+            .offset(y: -150)
         }
         .padding()
     }
