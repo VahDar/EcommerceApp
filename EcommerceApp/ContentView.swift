@@ -16,10 +16,24 @@ struct ContentView: View {
                 Text("Some text about this shop")
                 Spacer()
             }
-            Button("Register") {
+            VStack{
+                Button("Sign up") {
+                    
+                }
+                .foregroundStyle(.white)
+                .frame(width: 200, height: 50)
+                .background(Color.black)
+                .clipShape(Capsule())
                 
+                Button("Log in") {
+                    
+                }
+                .foregroundStyle(.black)
+                .frame(width: 200, height: 50)
+                .overlay(
+                    Capsule().stroke(lineWidth: 2)
+                )
             }
-            .buttonBorderShape(.capsule)
         }
         .padding()
     }
