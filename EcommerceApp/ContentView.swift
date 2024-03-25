@@ -16,10 +16,15 @@ struct ContentView: View {
                 Text("Some text about this shop")
                 Spacer()
             }
-            Image("example")
-                .resizable()
-                .frame(width: 250, height: 200)
-                
+                HStack {
+                    Spacer()
+                    Image("example")
+                        .resizable()
+                        .frame(width: 250, height: 200)
+                    Spacer()
+                }
+                .offset(y: -200)
+            
             VStack{
                 Button("Sign up") {
                     
