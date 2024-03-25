@@ -10,10 +10,16 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            VStack {
+                Text("Ecommerce App")
+                    .font(.largeTitle.bold())
+                Text("Some text about this shop")
+                Spacer()
+            }
+            Button("Register") {
+                
+            }
+            .buttonBorderShape(.capsule)
         }
         .padding()
     }
