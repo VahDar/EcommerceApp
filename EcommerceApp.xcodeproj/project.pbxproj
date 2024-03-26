@@ -18,6 +18,8 @@
 		FC800D2C2BB34E0F001344C8 /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = FC800D2B2BB34E0F001344C8 /* FirebaseAppDistribution-Beta */; };
 		FC800D2F2BB35469001344C8 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = FC800D2E2BB35469001344C8 /* FirebaseAuth */; };
 		FC800D322BB3552B001344C8 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D312BB3552B001344C8 /* AuthenticationView.swift */; };
+		FC800D362BB358D9001344C8 /* SignInEmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D352BB358D9001344C8 /* SignInEmailViewModel.swift */; };
+		FC800D382BB3591C001344C8 /* SignInEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D372BB3591C001344C8 /* SignInEmailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		FC5C38372BB09ED90072FB2D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FC800D222BB34C51001344C8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FC800D312BB3552B001344C8 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		FC800D352BB358D9001344C8 /* SignInEmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInEmailViewModel.swift; sourceTree = "<group>"; };
+		FC800D372BB3591C001344C8 /* SignInEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInEmailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +98,27 @@
 		FC800D302BB35503001344C8 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				FC800D312BB3552B001344C8 /* AuthenticationView.swift */,
+				FC800D342BB358B6001344C8 /* ViewModel */,
+				FC800D332BB3589E001344C8 /* View */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		FC800D332BB3589E001344C8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC800D312BB3552B001344C8 /* AuthenticationView.swift */,
+				FC800D372BB3591C001344C8 /* SignInEmailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC800D342BB358B6001344C8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FC800D352BB358D9001344C8 /* SignInEmailViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,8 +203,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC5C38332BB09ED70072FB2D /* ContentView.swift in Sources */,
+				FC800D362BB358D9001344C8 /* SignInEmailViewModel.swift in Sources */,
 				FC5C38312BB09ED70072FB2D /* EcommerceAppApp.swift in Sources */,
 				FC800D322BB3552B001344C8 /* AuthenticationView.swift in Sources */,
+				FC800D382BB3591C001344C8 /* SignInEmailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
