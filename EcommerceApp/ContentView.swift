@@ -9,13 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
+        NavigationStack {
             VStack {
-                Text("Ecommerce App")
-                    .font(.largeTitle.bold())
-                Text("Some text about this shop")
-                Spacer()
-            }
+                VStack {
+                    Text("Ecommerce App")
+                        .font(.largeTitle.bold())
+                    Text("Some text about this shop")
+                    Spacer()
+                }
                 HStack {
                     Spacer()
                     Image("example")
@@ -24,28 +25,29 @@ struct ContentView: View {
                     Spacer()
                 }
                 .offset(y: -200)
-            
-            VStack{
-                Button("Sign up") {
-                    
-                }
-                .foregroundStyle(.white)
-                .frame(width: 200, height: 50)
-                .background(Color.black)
-                .clipShape(Capsule())
                 
-                Button("Log in") {
+                VStack{
+                    Button("Sign up") {
+                        AuthenticationView()
+                    }
+                    .foregroundStyle(.white)
+                    .frame(width: 200, height: 50)
+                    .background(Color.black)
+                    .clipShape(Capsule())
                     
+                    Button("Log in") {
+                        
+                    }
+                    .foregroundStyle(.black)
+                    .frame(width: 200, height: 50)
+                    .overlay(
+                        Capsule().stroke(lineWidth: 2)
+                    )
                 }
-                .foregroundStyle(.black)
-                .frame(width: 200, height: 50)
-                .overlay(
-                    Capsule().stroke(lineWidth: 2)
-                )
+                .offset(y: -150)
             }
-            .offset(y: -150)
+            .padding()
         }
-        .padding()
     }
 }
 

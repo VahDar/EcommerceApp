@@ -22,9 +22,6 @@
 		FC800D382BB3591C001344C8 /* SignInEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D372BB3591C001344C8 /* SignInEmailView.swift */; };
 		FC800D3B2BB42656001344C8 /* AuthDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D3A2BB42656001344C8 /* AuthDataModel.swift */; };
 		FC800D3E2BB42836001344C8 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D3D2BB42836001344C8 /* AuthenticationManager.swift */; };
-		FC800D412BB42FC4001344C8 /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D402BB42FC4001344C8 /* Injected.swift */; };
-		FC800D432BB43074001344C8 /* InjectionKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D422BB43074001344C8 /* InjectionKey.swift */; };
-		FC800D452BB430C9001344C8 /* InjectedValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D442BB430C9001344C8 /* InjectedValue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,9 +36,6 @@
 		FC800D372BB3591C001344C8 /* SignInEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInEmailView.swift; sourceTree = "<group>"; };
 		FC800D3A2BB42656001344C8 /* AuthDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthDataModel.swift; sourceTree = "<group>"; };
 		FC800D3D2BB42836001344C8 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
-		FC800D402BB42FC4001344C8 /* Injected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injected.swift; sourceTree = "<group>"; };
-		FC800D422BB43074001344C8 /* InjectionKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectionKey.swift; sourceTree = "<group>"; };
-		FC800D442BB430C9001344C8 /* InjectedValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectedValue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +74,6 @@
 		FC5C382F2BB09ED70072FB2D /* EcommerceApp */ = {
 			isa = PBXGroup;
 			children = (
-				FC800D3F2BB42FAD001344C8 /* DI */,
 				FC800D392BB42645001344C8 /* Model */,
 				FC800D302BB35503001344C8 /* Authentication */,
 				FC5C38302BB09ED70072FB2D /* EcommerceAppApp.swift */,
@@ -148,16 +141,6 @@
 				FC800D3D2BB42836001344C8 /* AuthenticationManager.swift */,
 			);
 			path = AuthenticationManager;
-			sourceTree = "<group>";
-		};
-		FC800D3F2BB42FAD001344C8 /* DI */ = {
-			isa = PBXGroup;
-			children = (
-				FC800D422BB43074001344C8 /* InjectionKey.swift */,
-				FC800D442BB430C9001344C8 /* InjectedValue.swift */,
-				FC800D402BB42FC4001344C8 /* Injected.swift */,
-			);
-			path = DI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,11 +229,8 @@
 				FC800D362BB358D9001344C8 /* SignInEmailViewModel.swift in Sources */,
 				FC5C38312BB09ED70072FB2D /* EcommerceAppApp.swift in Sources */,
 				FC800D3B2BB42656001344C8 /* AuthDataModel.swift in Sources */,
-				FC800D452BB430C9001344C8 /* InjectedValue.swift in Sources */,
 				FC800D322BB3552B001344C8 /* AuthenticationView.swift in Sources */,
 				FC800D382BB3591C001344C8 /* SignInEmailView.swift in Sources */,
-				FC800D432BB43074001344C8 /* InjectionKey.swift in Sources */,
-				FC800D412BB42FC4001344C8 /* Injected.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

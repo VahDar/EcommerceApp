@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct SignInEmailView: View {
-    private let authManager = AuthenticationManager()
-    @StateObject private var viewModel = SignInEmailViewModel(authManager: )
+    
+    @StateObject private var viewModel = SignInEmailViewModel()
     
     var body: some View {
         VStack{
@@ -23,7 +23,7 @@ struct SignInEmailView: View {
                 .cornerRadius(10)
             
             Button("Sign in") {
-                
+                viewModel.signIn()
             }
             .foregroundStyle(.white)
             .frame(width: 200, height: 50)

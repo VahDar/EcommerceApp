@@ -8,8 +8,10 @@
 import Foundation
 import FirebaseAuth
 
-final class AuthenticationManager {
+final class AuthanticationManager {
     
+    static let shared = AuthanticationManager()
+    private init() {}
     
     func createUser(email: String, password: String) async throws -> AuthDataModel {
         let authDataResult = try await Auth.auth().createUser(withEmail: email, password: password)
