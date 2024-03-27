@@ -21,7 +21,7 @@
 		FC800D362BB358D9001344C8 /* SignInEmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D352BB358D9001344C8 /* SignInEmailViewModel.swift */; };
 		FC800D382BB3591C001344C8 /* SignInEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D372BB3591C001344C8 /* SignInEmailView.swift */; };
 		FC800D3B2BB42656001344C8 /* AuthDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D3A2BB42656001344C8 /* AuthDataModel.swift */; };
-		FC800D3E2BB42836001344C8 /* AuthanticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D3D2BB42836001344C8 /* AuthanticationManager.swift */; };
+		FC800D3E2BB42836001344C8 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D3D2BB42836001344C8 /* AuthenticationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +35,7 @@
 		FC800D352BB358D9001344C8 /* SignInEmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInEmailViewModel.swift; sourceTree = "<group>"; };
 		FC800D372BB3591C001344C8 /* SignInEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInEmailView.swift; sourceTree = "<group>"; };
 		FC800D3A2BB42656001344C8 /* AuthDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthDataModel.swift; sourceTree = "<group>"; };
-		FC800D3D2BB42836001344C8 /* AuthanticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthanticationManager.swift; sourceTree = "<group>"; };
+		FC800D3D2BB42836001344C8 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +138,7 @@
 		FC800D3C2BB4280B001344C8 /* AuthenticationManager */ = {
 			isa = PBXGroup;
 			children = (
-				FC800D3D2BB42836001344C8 /* AuthanticationManager.swift */,
+				FC800D3D2BB42836001344C8 /* AuthenticationManager.swift */,
 			);
 			path = AuthenticationManager;
 			sourceTree = "<group>";
@@ -224,7 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC800D3E2BB42836001344C8 /* AuthanticationManager.swift in Sources */,
+				FC800D3E2BB42836001344C8 /* AuthenticationManager.swift in Sources */,
 				FC5C38332BB09ED70072FB2D /* ContentView.swift in Sources */,
 				FC800D362BB358D9001344C8 /* SignInEmailViewModel.swift in Sources */,
 				FC5C38312BB09ED70072FB2D /* EcommerceAppApp.swift in Sources */,
