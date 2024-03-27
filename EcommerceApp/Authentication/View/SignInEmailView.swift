@@ -17,10 +17,18 @@ struct SignInEmailView: View {
                 .padding()
                 .background(Color.gray.opacity(0.2))
                 .cornerRadius(10)
-            TextField("Enter Password", text: $viewModel.password)
+            SecureField("Enter Password", text: $viewModel.password)
                 .padding()
                 .background(Color.gray.opacity(0.2))
                 .cornerRadius(10)
+            
+            Button("Sign in") {
+                
+            }
+            .foregroundStyle(.white)
+            .frame(width: 200, height: 50)
+            .background(Color.black)
+            .clipShape(Capsule())
         }
         .padding()
     }

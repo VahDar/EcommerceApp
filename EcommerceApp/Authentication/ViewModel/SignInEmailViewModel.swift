@@ -6,9 +6,12 @@
 //
 
 import Foundation
+import FirebaseAuth
 
 final class SignInEmailViewModel: ObservableObject {
     
     @Published var email = ""
     @Published var password = ""
+    
+    
 }
