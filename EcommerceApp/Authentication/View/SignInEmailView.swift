@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct SignInEmailView: View {
-    
-    @StateObject private var viewModel = SignInEmailViewModel()
+    private let authManager = AuthenticationManager()
+    @StateObject private var viewModel = SignInEmailViewModel(authManager: )
     
     var body: some View {
         VStack{

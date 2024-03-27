@@ -24,7 +24,14 @@ final class SignInEmailViewModel: ObservableObject {
             print("No email or password found.")
             return
         }
-        
-        let returneduserData = try await authManager.createUser(email: email, password: password)
+        Task {
+            do {
+                let returneduserData = try await authManager.createUser(email: email, password: password)
+                print("Success")
+                print(returneduserData)
+            } catch {
+                print("Error: \(error)")
+            }
+        }
     }
 }
