@@ -21,6 +21,9 @@
 		FC800D382BB3591C001344C8 /* SignInEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D372BB3591C001344C8 /* SignInEmailView.swift */; };
 		FC800D3B2BB42656001344C8 /* AuthDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D3A2BB42656001344C8 /* AuthDataModel.swift */; };
 		FC800D3E2BB42836001344C8 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D3D2BB42836001344C8 /* AuthenticationManager.swift */; };
+		FC800D472BB59D40001344C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D462BB59D40001344C8 /* ContentView.swift */; };
+		FC800D4A2BB5A2E6001344C8 /* SettingsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D492BB5A2E6001344C8 /* SettingsScreenView.swift */; };
+		FC800D4E2BB5A317001344C8 /* SettingsScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D4D2BB5A317001344C8 /* SettingsScreenViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		FC800D372BB3591C001344C8 /* SignInEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInEmailView.swift; sourceTree = "<group>"; };
 		FC800D3A2BB42656001344C8 /* AuthDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthDataModel.swift; sourceTree = "<group>"; };
 		FC800D3D2BB42836001344C8 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		FC800D462BB59D40001344C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FC800D492BB5A2E6001344C8 /* SettingsScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreenView.swift; sourceTree = "<group>"; };
+		FC800D4D2BB5A317001344C8 /* SettingsScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreenViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,12 +78,14 @@
 		FC5C382F2BB09ED70072FB2D /* EcommerceApp */ = {
 			isa = PBXGroup;
 			children = (
+				FC800D482BB5A2BE001344C8 /* SettingsScreen */,
 				FC800D392BB42645001344C8 /* Model */,
 				FC800D302BB35503001344C8 /* Authentication */,
 				FC5C38302BB09ED70072FB2D /* EcommerceAppApp.swift */,
 				FC800D222BB34C51001344C8 /* GoogleService-Info.plist */,
 				FC5C38342BB09ED90072FB2D /* Assets.xcassets */,
 				FC5C38362BB09ED90072FB2D /* Preview Content */,
+				FC800D462BB59D40001344C8 /* ContentView.swift */,
 			);
 			path = EcommerceApp;
 			sourceTree = "<group>";
@@ -138,6 +146,31 @@
 				FC800D3D2BB42836001344C8 /* AuthenticationManager.swift */,
 			);
 			path = AuthenticationManager;
+			sourceTree = "<group>";
+		};
+		FC800D482BB5A2BE001344C8 /* SettingsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				FC800D4C2BB5A2FC001344C8 /* VIewModel */,
+				FC800D4B2BB5A2F1001344C8 /* View */,
+			);
+			path = SettingsScreen;
+			sourceTree = "<group>";
+		};
+		FC800D4B2BB5A2F1001344C8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC800D492BB5A2E6001344C8 /* SettingsScreenView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC800D4C2BB5A2FC001344C8 /* VIewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FC800D4D2BB5A317001344C8 /* SettingsScreenViewModel.swift */,
+			);
+			path = VIewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,8 +256,11 @@
 			files = (
 				FC800D3E2BB42836001344C8 /* AuthenticationManager.swift in Sources */,
 				FC800D362BB358D9001344C8 /* SignInEmailViewModel.swift in Sources */,
+				FC800D472BB59D40001344C8 /* ContentView.swift in Sources */,
 				FC5C38312BB09ED70072FB2D /* EcommerceAppApp.swift in Sources */,
 				FC800D3B2BB42656001344C8 /* AuthDataModel.swift in Sources */,
+				FC800D4E2BB5A317001344C8 /* SettingsScreenViewModel.swift in Sources */,
+				FC800D4A2BB5A2E6001344C8 /* SettingsScreenView.swift in Sources */,
 				FC800D322BB3552B001344C8 /* AuthenticationView.swift in Sources */,
 				FC800D382BB3591C001344C8 /* SignInEmailView.swift in Sources */,
 			);
