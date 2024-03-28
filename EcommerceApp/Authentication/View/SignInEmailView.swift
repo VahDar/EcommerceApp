@@ -10,7 +10,7 @@ import SwiftUI
 struct SignInEmailView: View {
     
     @StateObject private var viewModel = SignInEmailViewModel()
-    
+    @Binding var showSignInView: Bool
     var body: some View {
         VStack{
             TextField("Enter Email", text: $viewModel.email)
@@ -23,7 +23,14 @@ struct SignInEmailView: View {
                 .cornerRadius(10)
             
             Button("Sign in") {
-                viewModel.signIn()
+                Task {
+                    do {
+                        try await viewModel.signIn()
+                        showSignInView = false
+                    } catch {
+                        print(error)
+                    }
+                }
             }
             .foregroundStyle(.white)
             .frame(width: 200, height: 50)
@@ -36,6 +43,6 @@ struct SignInEmailView: View {
 
 #Preview {
     NavigationStack {
-        SignInEmailView()
+        SignInEmailView(showSignInView: .constant(false))
     }
 }
