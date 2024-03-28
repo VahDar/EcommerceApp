@@ -10,6 +10,22 @@ import SwiftUI
 struct AuthenticationView: View {
     var body: some View {
         VStack{
+            VStack {
+                Text("Ecommerce App")
+                    .font(.largeTitle.bold())
+                Text("Some text about this shop")
+                Spacer()
+            }
+            
+            HStack {
+                Spacer()
+                Image("example")
+                    .resizable()
+                    .frame(width: 250, height: 200)
+                Spacer()
+            }
+            .offset(y: -250)
+            
             NavigationLink {
                 SignInEmailView()
             } label : {
@@ -18,10 +34,9 @@ struct AuthenticationView: View {
                     .foregroundStyle(.white)
                     .frame(height: 55)
                     .frame(maxWidth: .infinity)
-                    .background(Color.blue)
+                    .background(Color.black)
                     .clipShape(Capsule())
             }
-            Spacer()
         }
         .padding()
     }
