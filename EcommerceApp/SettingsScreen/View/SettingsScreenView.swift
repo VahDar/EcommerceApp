@@ -14,12 +14,22 @@ struct SettingsScreenView: View {
     
     var body: some View {
         List {
-            Button("Sign Out") {
+            Button("Sign out") {
                 Task {
                     do {
                         try viewModel.logOut()
                         showSignInView = true
                     } catch {
+                        print(error)
+                    }
+                }
+            }
+            
+            Button("Reset password") {
+                Task {
+                    do {
+                        try await viewModel.resetPassword()
+                        print("Passwotd reset!")                    } catch {
                         print(error)
                     }
                 }

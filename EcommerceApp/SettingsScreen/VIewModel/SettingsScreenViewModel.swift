@@ -13,4 +13,14 @@ final class SettingsScreenViewModel: ObservableObject {
     func logOut() throws {
        try AuthanticationManager.shared.signOut()
     }
+    
+    func resetPassword() async throws {
+        let authUser = try AuthanticationManager.shared.getAuthUser()
+        
+        guard let email = authUser.email else {
+            throw URLError(.fileDoesNotExist)
+        }
+        
+        try await AuthanticationManager.shared.resetPassword(email: email)
+    }
 }
