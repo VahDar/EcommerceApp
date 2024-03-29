@@ -10,6 +10,8 @@ import Foundation
 @MainActor
 final class SettingsScreenViewModel: ObservableObject {
     
+    
+    
     func logOut() throws {
        try AuthanticationManager.shared.signOut()
     }
@@ -22,5 +24,10 @@ final class SettingsScreenViewModel: ObservableObject {
         }
         
         try await AuthanticationManager.shared.resetPassword(email: email)
+    }
+    
+    func updateEmail(email: String) async throws {
+        
+        try await AuthanticationManager.shared.updateEmail(email: email)
     }
 }

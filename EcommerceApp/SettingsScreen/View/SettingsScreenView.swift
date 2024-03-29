@@ -12,6 +12,8 @@ struct SettingsScreenView: View {
     @StateObject private var viewModel = SettingsScreenViewModel()
     @Binding var showSignInView: Bool
     
+    @State private var showAlert = false
+    @State private var tempEmail = ""
     var body: some View {
         List {
             Button("Sign out") {
@@ -34,9 +36,31 @@ struct SettingsScreenView: View {
                     }
                 }
             }
+            
+            Button("Update email") {
+                self.showAlert = true
+            }
         }
+        .alert("Update Email", isPresented: $showAlert) {
+                   TextField("Email", text: $tempEmail)
+                   Button("Cancel", role: .cancel) { }
+                   Button("Update") {
+                       Task {
+                           do {
+                               try await viewModel.updateEmail(email: tempEmail)
+                               print("Email updated")
+                           } catch {
+                               print(error)
+                           }
+                       }
+                   }
+               } message: {
+                   Text("Please enter your new email address.")
+               }
     }
 }
+
+
 
 #Preview {
     NavigationStack {
