@@ -30,9 +30,21 @@ struct AuthenticationView: View {
             .offset(y: -250)
             
             NavigationLink {
-                SignInEmailView(showSignInView: $showSignInView)
+                SignInEmailView(showSignInView: $showSignInView, authMode: .signIn)
             } label : {
-                Text("Sign In With Email")
+                Text("Sign In")
+                    .font(.headline)
+                    .foregroundStyle(.white)
+                    .frame(height: 55)
+                    .frame(maxWidth: .infinity)
+                    .background(Color.black)
+                    .clipShape(Capsule())
+            }
+            
+            NavigationLink {
+                SignInEmailView(showSignInView: $showSignInView, authMode: .signUp)
+            } label : {
+                Text("Sign Up")
                     .font(.headline)
                     .foregroundStyle(.white)
                     .frame(height: 55)

@@ -24,6 +24,7 @@
 		FC800D472BB59D40001344C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D462BB59D40001344C8 /* ContentView.swift */; };
 		FC800D4A2BB5A2E6001344C8 /* SettingsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D492BB5A2E6001344C8 /* SettingsScreenView.swift */; };
 		FC800D4E2BB5A317001344C8 /* SettingsScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D4D2BB5A317001344C8 /* SettingsScreenViewModel.swift */; };
+		FC800D512BB6D29A001344C8 /* AuthMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D502BB6D29A001344C8 /* AuthMode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		FC800D462BB59D40001344C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FC800D492BB5A2E6001344C8 /* SettingsScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreenView.swift; sourceTree = "<group>"; };
 		FC800D4D2BB5A317001344C8 /* SettingsScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreenViewModel.swift; sourceTree = "<group>"; };
+		FC800D502BB6D29A001344C8 /* AuthMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthMode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				FC800D482BB5A2BE001344C8 /* SettingsScreen */,
 				FC800D392BB42645001344C8 /* Model */,
 				FC800D302BB35503001344C8 /* Authentication */,
+				FC800D4F2BB6D28D001344C8 /* Enum */,
 				FC5C38302BB09ED70072FB2D /* EcommerceAppApp.swift */,
 				FC800D222BB34C51001344C8 /* GoogleService-Info.plist */,
 				FC5C38342BB09ED90072FB2D /* Assets.xcassets */,
@@ -173,6 +176,14 @@
 			path = VIewModel;
 			sourceTree = "<group>";
 		};
+		FC800D4F2BB6D28D001344C8 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				FC800D502BB6D29A001344C8 /* AuthMode.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -256,6 +267,7 @@
 			files = (
 				FC800D3E2BB42836001344C8 /* AuthenticationManager.swift in Sources */,
 				FC800D362BB358D9001344C8 /* SignInEmailViewModel.swift in Sources */,
+				FC800D512BB6D29A001344C8 /* AuthMode.swift in Sources */,
 				FC800D472BB59D40001344C8 /* ContentView.swift in Sources */,
 				FC5C38312BB09ED70072FB2D /* EcommerceAppApp.swift in Sources */,
 				FC800D3B2BB42656001344C8 /* AuthDataModel.swift in Sources */,
