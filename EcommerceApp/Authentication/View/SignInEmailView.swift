@@ -25,11 +25,13 @@ struct SignInEmailView: View {
                 .padding()
                 .background(Color.gray.opacity(0.2))
                 .cornerRadius(10)
+            
             if authMode == .signIn {
                 Button("Sign In with Email") {
                     Task {
                         do {
                             try await viewModel.signIn()
+                            showSignInView = false
                             print("success")
                         } catch {
                             print(error)
@@ -46,6 +48,7 @@ struct SignInEmailView: View {
                     Task {
                         do {
                             try await viewModel.signUp()
+                            showSignInView = false
                             print("success")
                         } catch {
                             print(error)
