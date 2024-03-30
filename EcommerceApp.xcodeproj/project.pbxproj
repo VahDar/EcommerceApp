@@ -26,6 +26,7 @@
 		FC800D4E2BB5A317001344C8 /* SettingsScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D4D2BB5A317001344C8 /* SettingsScreenViewModel.swift */; };
 		FC800D512BB6D29A001344C8 /* AuthMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D502BB6D29A001344C8 /* AuthMode.swift */; };
 		FC800D5A2BB88E6F001344C8 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D592BB88E6F001344C8 /* InputView.swift */; };
+		FC800D5C2BB8988F001344C8 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D5B2BB8988F001344C8 /* RegistrationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		FC800D4D2BB5A317001344C8 /* SettingsScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreenViewModel.swift; sourceTree = "<group>"; };
 		FC800D502BB6D29A001344C8 /* AuthMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthMode.swift; sourceTree = "<group>"; };
 		FC800D592BB88E6F001344C8 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		FC800D5B2BB8988F001344C8 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,13 +113,14 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
-		FC800D332BB3589E001344C8 /* AuthenticationView */ = {
+		FC800D332BB3589E001344C8 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
 				FC800D312BB3552B001344C8 /* AuthenticationView.swift */,
 				FC800D372BB3591C001344C8 /* SignInView.swift */,
+				FC800D5B2BB8988F001344C8 /* RegistrationView.swift */,
 			);
-			path = AuthenticationView;
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 		FC800D342BB358B6001344C8 /* SignInEmailViewModel */ = {
@@ -188,7 +191,7 @@
 		FC800D542BB87D97001344C8 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FC800D332BB3589E001344C8 /* AuthenticationView */,
+				FC800D332BB3589E001344C8 /* Authentication */,
 				FC800D4B2BB5A2F1001344C8 /* SettingView */,
 				FC800D552BB87D9F001344C8 /* Root */,
 			);
@@ -313,6 +316,7 @@
 				FC800D3E2BB42836001344C8 /* AuthenticationManager.swift in Sources */,
 				FC800D362BB358D9001344C8 /* SignInEmailViewModel.swift in Sources */,
 				FC800D512BB6D29A001344C8 /* AuthMode.swift in Sources */,
+				FC800D5C2BB8988F001344C8 /* RegistrationView.swift in Sources */,
 				FC800D472BB59D40001344C8 /* ContentView.swift in Sources */,
 				FC5C38312BB09ED70072FB2D /* EcommerceAppApp.swift in Sources */,
 				FC800D3B2BB42656001344C8 /* AuthDataModel.swift in Sources */,
