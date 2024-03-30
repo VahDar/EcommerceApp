@@ -18,13 +18,14 @@
 		FC800D2F2BB35469001344C8 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = FC800D2E2BB35469001344C8 /* FirebaseAuth */; };
 		FC800D322BB3552B001344C8 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D312BB3552B001344C8 /* AuthenticationView.swift */; };
 		FC800D362BB358D9001344C8 /* SignInEmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D352BB358D9001344C8 /* SignInEmailViewModel.swift */; };
-		FC800D382BB3591C001344C8 /* SignInEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D372BB3591C001344C8 /* SignInEmailView.swift */; };
+		FC800D382BB3591C001344C8 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D372BB3591C001344C8 /* SignInView.swift */; };
 		FC800D3B2BB42656001344C8 /* AuthDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D3A2BB42656001344C8 /* AuthDataModel.swift */; };
 		FC800D3E2BB42836001344C8 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D3D2BB42836001344C8 /* AuthenticationManager.swift */; };
 		FC800D472BB59D40001344C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D462BB59D40001344C8 /* ContentView.swift */; };
 		FC800D4A2BB5A2E6001344C8 /* SettingsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D492BB5A2E6001344C8 /* SettingsScreenView.swift */; };
 		FC800D4E2BB5A317001344C8 /* SettingsScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D4D2BB5A317001344C8 /* SettingsScreenViewModel.swift */; };
 		FC800D512BB6D29A001344C8 /* AuthMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D502BB6D29A001344C8 /* AuthMode.swift */; };
+		FC800D5A2BB88E6F001344C8 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D592BB88E6F001344C8 /* InputView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,13 +36,14 @@
 		FC800D222BB34C51001344C8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FC800D312BB3552B001344C8 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		FC800D352BB358D9001344C8 /* SignInEmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInEmailViewModel.swift; sourceTree = "<group>"; };
-		FC800D372BB3591C001344C8 /* SignInEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInEmailView.swift; sourceTree = "<group>"; };
+		FC800D372BB3591C001344C8 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		FC800D3A2BB42656001344C8 /* AuthDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthDataModel.swift; sourceTree = "<group>"; };
 		FC800D3D2BB42836001344C8 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		FC800D462BB59D40001344C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FC800D492BB5A2E6001344C8 /* SettingsScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreenView.swift; sourceTree = "<group>"; };
 		FC800D4D2BB5A317001344C8 /* SettingsScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreenViewModel.swift; sourceTree = "<group>"; };
 		FC800D502BB6D29A001344C8 /* AuthMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthMode.swift; sourceTree = "<group>"; };
+		FC800D592BB88E6F001344C8 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,14 +81,15 @@
 		FC5C382F2BB09ED70072FB2D /* EcommerceApp */ = {
 			isa = PBXGroup;
 			children = (
+				FC800D582BB88E3C001344C8 /* Components */,
 				FC800D572BB87E47001344C8 /* ViewModel */,
 				FC800D542BB87D97001344C8 /* View */,
 				FC800D562BB87DD9001344C8 /* Manager */,
 				FC800D392BB42645001344C8 /* Model */,
-				FC800D4F2BB6D28D001344C8 /* Enum */,
 				FC800D532BB733DB001344C8 /* Application */,
 				FC800D522BB7337C001344C8 /* Resources */,
 				FC5C382E2BB09ED70072FB2D /* Products */,
+				FC5C38362BB09ED90072FB2D /* Preview Content */,
 				FC800D2D2BB35469001344C8 /* Frameworks */,
 			);
 			path = EcommerceApp;
@@ -112,7 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				FC800D312BB3552B001344C8 /* AuthenticationView.swift */,
-				FC800D372BB3591C001344C8 /* SignInEmailView.swift */,
+				FC800D372BB3591C001344C8 /* SignInView.swift */,
 			);
 			path = AuthenticationView;
 			sourceTree = "<group>";
@@ -177,7 +180,6 @@
 		FC800D532BB733DB001344C8 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				FC5C38362BB09ED90072FB2D /* Preview Content */,
 				FC5C38302BB09ED70072FB2D /* EcommerceAppApp.swift */,
 			);
 			path = Application;
@@ -186,9 +188,9 @@
 		FC800D542BB87D97001344C8 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FC800D552BB87D9F001344C8 /* Root */,
-				FC800D4B2BB5A2F1001344C8 /* SettingView */,
 				FC800D332BB3589E001344C8 /* AuthenticationView */,
+				FC800D4B2BB5A2F1001344C8 /* SettingView */,
+				FC800D552BB87D9F001344C8 /* Root */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -216,6 +218,15 @@
 				FC800D4C2BB5A2FC001344C8 /* SettingsVIewModel */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FC800D582BB88E3C001344C8 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FC800D4F2BB6D28D001344C8 /* Enum */,
+				FC800D592BB88E6F001344C8 /* InputView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,8 +318,9 @@
 				FC800D3B2BB42656001344C8 /* AuthDataModel.swift in Sources */,
 				FC800D4E2BB5A317001344C8 /* SettingsScreenViewModel.swift in Sources */,
 				FC800D4A2BB5A2E6001344C8 /* SettingsScreenView.swift in Sources */,
+				FC800D5A2BB88E6F001344C8 /* InputView.swift in Sources */,
 				FC800D322BB3552B001344C8 /* AuthenticationView.swift in Sources */,
-				FC800D382BB3591C001344C8 /* SignInEmailView.swift in Sources */,
+				FC800D382BB3591C001344C8 /* SignInView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

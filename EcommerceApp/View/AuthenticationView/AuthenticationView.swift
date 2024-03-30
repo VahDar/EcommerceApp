@@ -30,7 +30,7 @@ struct AuthenticationView: View {
             .offset(y: -250)
             
             NavigationLink {
-                SignInEmailView(showSignInView: $showSignInView, authMode: .signIn)
+                SignInView()
             } label : {
                 Text("Sign In")
                     .font(.headline)
@@ -42,7 +42,7 @@ struct AuthenticationView: View {
             }
             
             NavigationLink {
-                SignInEmailView(showSignInView: $showSignInView, authMode: .signUp)
+                SignInView()
             } label : {
                 Text("Sign Up")
                     .font(.headline)
