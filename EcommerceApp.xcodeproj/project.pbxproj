@@ -79,12 +79,11 @@
 		FC5C382F2BB09ED70072FB2D /* EcommerceApp */ = {
 			isa = PBXGroup;
 			children = (
-				FC800D462BB59D40001344C8 /* ContentView.swift */,
-				FC800D482BB5A2BE001344C8 /* SettingsScreen */,
+				FC800D572BB87E47001344C8 /* ViewModel */,
+				FC800D542BB87D97001344C8 /* View */,
+				FC800D562BB87DD9001344C8 /* Manager */,
 				FC800D392BB42645001344C8 /* Model */,
-				FC800D302BB35503001344C8 /* Authentication */,
 				FC800D4F2BB6D28D001344C8 /* Enum */,
-				FC5C38362BB09ED90072FB2D /* Preview Content */,
 				FC800D532BB733DB001344C8 /* Application */,
 				FC800D522BB7337C001344C8 /* Resources */,
 				FC5C382E2BB09ED70072FB2D /* Products */,
@@ -109,31 +108,21 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
-		FC800D302BB35503001344C8 /* Authentication */ = {
-			isa = PBXGroup;
-			children = (
-				FC800D3C2BB4280B001344C8 /* AuthenticationManager */,
-				FC800D342BB358B6001344C8 /* ViewModel */,
-				FC800D332BB3589E001344C8 /* View */,
-			);
-			path = Authentication;
-			sourceTree = "<group>";
-		};
-		FC800D332BB3589E001344C8 /* View */ = {
+		FC800D332BB3589E001344C8 /* AuthenticationView */ = {
 			isa = PBXGroup;
 			children = (
 				FC800D312BB3552B001344C8 /* AuthenticationView.swift */,
 				FC800D372BB3591C001344C8 /* SignInEmailView.swift */,
 			);
-			path = View;
+			path = AuthenticationView;
 			sourceTree = "<group>";
 		};
-		FC800D342BB358B6001344C8 /* ViewModel */ = {
+		FC800D342BB358B6001344C8 /* SignInEmailViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				FC800D352BB358D9001344C8 /* SignInEmailViewModel.swift */,
 			);
-			path = ViewModel;
+			path = SignInEmailViewModel;
 			sourceTree = "<group>";
 		};
 		FC800D392BB42645001344C8 /* Model */ = {
@@ -152,29 +141,20 @@
 			path = AuthenticationManager;
 			sourceTree = "<group>";
 		};
-		FC800D482BB5A2BE001344C8 /* SettingsScreen */ = {
-			isa = PBXGroup;
-			children = (
-				FC800D4C2BB5A2FC001344C8 /* VIewModel */,
-				FC800D4B2BB5A2F1001344C8 /* View */,
-			);
-			path = SettingsScreen;
-			sourceTree = "<group>";
-		};
-		FC800D4B2BB5A2F1001344C8 /* View */ = {
+		FC800D4B2BB5A2F1001344C8 /* SettingView */ = {
 			isa = PBXGroup;
 			children = (
 				FC800D492BB5A2E6001344C8 /* SettingsScreenView.swift */,
 			);
-			path = View;
+			path = SettingView;
 			sourceTree = "<group>";
 		};
-		FC800D4C2BB5A2FC001344C8 /* VIewModel */ = {
+		FC800D4C2BB5A2FC001344C8 /* SettingsVIewModel */ = {
 			isa = PBXGroup;
 			children = (
 				FC800D4D2BB5A317001344C8 /* SettingsScreenViewModel.swift */,
 			);
-			path = VIewModel;
+			path = SettingsVIewModel;
 			sourceTree = "<group>";
 		};
 		FC800D4F2BB6D28D001344C8 /* Enum */ = {
@@ -197,9 +177,45 @@
 		FC800D532BB733DB001344C8 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				FC5C38362BB09ED90072FB2D /* Preview Content */,
 				FC5C38302BB09ED70072FB2D /* EcommerceAppApp.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		FC800D542BB87D97001344C8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC800D552BB87D9F001344C8 /* Root */,
+				FC800D4B2BB5A2F1001344C8 /* SettingView */,
+				FC800D332BB3589E001344C8 /* AuthenticationView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC800D552BB87D9F001344C8 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				FC800D462BB59D40001344C8 /* ContentView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		FC800D562BB87DD9001344C8 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				FC800D3C2BB4280B001344C8 /* AuthenticationManager */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		FC800D572BB87E47001344C8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FC800D342BB358B6001344C8 /* SignInEmailViewModel */,
+				FC800D4C2BB5A2FC001344C8 /* SettingsVIewModel */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
