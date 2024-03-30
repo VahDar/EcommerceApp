@@ -9,6 +9,9 @@ import SwiftUI
 
 struct SignInView: View {
     
+    @State private var email = ""
+    @State private var password = ""
+    
     var body: some View {
         NavigationStack {
             VStack{
@@ -16,20 +19,53 @@ struct SignInView: View {
                     Text("Ecommerce App")
                         .font(.largeTitle.bold())
                     Text("Some text about this shop")
-                    Spacer()
+                    
+                    HStack {
+                        Spacer()
+                        Image("example")
+                            .resizable()
+                            .frame(width: 200, height: 160)
+                        Spacer()
+                    }
                 }
                 
-                HStack {
-                    Spacer()
-                    Image("example")
-                        .resizable()
-                        .frame(width: 200, height: 160)
-                    Spacer()
+                VStack(spacing: 24) {
+                    InputView(text: $email,
+                              title: "Email Adress",
+                              placeholder: "Enter your email")
+                        .textInputAutocapitalization(.never)
+                    
+                    InputView(text: $password,
+                              title: "Password",
+                              placeholder: "Enter your password",
+                              isSecureField: true)
+                        .textInputAutocapitalization(.never)
                 }
-                .offset(y: -500)
+                .padding(.horizontal)
+                .padding(.top, 10)
+                
+                Button(action: {
+                    print("sign in")
+                }, label: {
+                    Text("Sign In With Email")
+                        .fontWeight(.semibold)
+                })
+                .foregroundStyle(Color.white)
+                .frame(width: UIScreen.main.bounds.width - 32, height: 48)
+                .background(Color.blue)
+                .clipShape(.rect(cornerRadius: 10))
+                .padding(.top, 8)
+                Spacer()
+                
+                NavigationLink {
+                    
+                } label: {
+                    Text("Don't have an account? ")
+                        + Text("Sign up")
+                            .fontWeight(.bold)
+                }
+                .font(.system(size: 16))
             }
-            
-            
         }
     }
 }

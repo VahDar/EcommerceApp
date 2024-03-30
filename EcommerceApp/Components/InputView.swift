@@ -17,7 +17,7 @@ struct InputView: View {
         VStack(alignment: .leading, spacing: 12) {
            Text(title)
                 .foregroundStyle(Color(.darkGray))
-                .fontWeight(.semibold)
+                .fontWeight(.bold)
                 .font(.footnote)
             
             if isSecureField {
