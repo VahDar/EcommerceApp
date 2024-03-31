@@ -16,18 +16,17 @@
 		FC800D2A2BB34E0F001344C8 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = FC800D292BB34E0F001344C8 /* FirebaseAppCheck */; };
 		FC800D2C2BB34E0F001344C8 /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = FC800D2B2BB34E0F001344C8 /* FirebaseAppDistribution-Beta */; };
 		FC800D2F2BB35469001344C8 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = FC800D2E2BB35469001344C8 /* FirebaseAuth */; };
-		FC800D322BB3552B001344C8 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D312BB3552B001344C8 /* AuthenticationView.swift */; };
-		FC800D362BB358D9001344C8 /* SignInEmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D352BB358D9001344C8 /* SignInEmailViewModel.swift */; };
 		FC800D382BB3591C001344C8 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D372BB3591C001344C8 /* SignInView.swift */; };
-		FC800D3B2BB42656001344C8 /* AuthDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D3A2BB42656001344C8 /* AuthDataModel.swift */; };
-		FC800D3E2BB42836001344C8 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D3D2BB42836001344C8 /* AuthenticationManager.swift */; };
+		FC800D3B2BB42656001344C8 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D3A2BB42656001344C8 /* UserModel.swift */; };
 		FC800D472BB59D40001344C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D462BB59D40001344C8 /* ContentView.swift */; };
 		FC800D4A2BB5A2E6001344C8 /* SettingsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D492BB5A2E6001344C8 /* SettingsScreenView.swift */; };
-		FC800D4E2BB5A317001344C8 /* SettingsScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D4D2BB5A317001344C8 /* SettingsScreenViewModel.swift */; };
-		FC800D512BB6D29A001344C8 /* AuthMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D502BB6D29A001344C8 /* AuthMode.swift */; };
 		FC800D5A2BB88E6F001344C8 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D592BB88E6F001344C8 /* InputView.swift */; };
 		FC800D5C2BB8988F001344C8 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D5B2BB8988F001344C8 /* RegistrationView.swift */; };
 		FC800D5E2BB9908C001344C8 /* SettingRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D5D2BB9908C001344C8 /* SettingRowView.swift */; };
+		FC800D612BB9CAA2001344C8 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FC800D602BB9CAA2001344C8 /* FirebaseFirestore */; };
+		FC800D632BB9CAA8001344C8 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FC800D622BB9CAA8001344C8 /* FirebaseFirestoreSwift */; };
+		FC800D652BB9CACD001344C8 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = FC800D642BB9CACD001344C8 /* FirebaseStorage */; };
+		FC800D692BB9CD8E001344C8 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D682BB9CD8E001344C8 /* AuthViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,18 +35,14 @@
 		FC5C38342BB09ED90072FB2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC5C38372BB09ED90072FB2D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FC800D222BB34C51001344C8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		FC800D312BB3552B001344C8 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
-		FC800D352BB358D9001344C8 /* SignInEmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInEmailViewModel.swift; sourceTree = "<group>"; };
 		FC800D372BB3591C001344C8 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
-		FC800D3A2BB42656001344C8 /* AuthDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthDataModel.swift; sourceTree = "<group>"; };
-		FC800D3D2BB42836001344C8 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		FC800D3A2BB42656001344C8 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		FC800D462BB59D40001344C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FC800D492BB5A2E6001344C8 /* SettingsScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreenView.swift; sourceTree = "<group>"; };
-		FC800D4D2BB5A317001344C8 /* SettingsScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreenViewModel.swift; sourceTree = "<group>"; };
-		FC800D502BB6D29A001344C8 /* AuthMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthMode.swift; sourceTree = "<group>"; };
 		FC800D592BB88E6F001344C8 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		FC800D5B2BB8988F001344C8 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		FC800D5D2BB9908C001344C8 /* SettingRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingRowView.swift; sourceTree = "<group>"; };
+		FC800D682BB9CD8E001344C8 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +53,11 @@
 				FC800D282BB34E0F001344C8 /* FirebaseAnalyticsSwift in Frameworks */,
 				FC800D2F2BB35469001344C8 /* FirebaseAuth in Frameworks */,
 				FC800D2A2BB34E0F001344C8 /* FirebaseAppCheck in Frameworks */,
+				FC800D632BB9CAA8001344C8 /* FirebaseFirestoreSwift in Frameworks */,
 				FC800D262BB34E0F001344C8 /* FirebaseAnalytics in Frameworks */,
+				FC800D652BB9CACD001344C8 /* FirebaseStorage in Frameworks */,
 				FC800D2C2BB34E0F001344C8 /* FirebaseAppDistribution-Beta in Frameworks */,
+				FC800D612BB9CAA2001344C8 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				FC5C382F2BB09ED70072FB2D /* EcommerceApp */,
+				FC800D5F2BB9CAA2001344C8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,13 +85,12 @@
 			isa = PBXGroup;
 			children = (
 				FC800D582BB88E3C001344C8 /* Components */,
-				FC800D572BB87E47001344C8 /* ViewModel */,
-				FC800D542BB87D97001344C8 /* View */,
-				FC800D562BB87DD9001344C8 /* Manager */,
+				FC800D542BB87D97001344C8 /* Core */,
 				FC800D392BB42645001344C8 /* Model */,
 				FC800D532BB733DB001344C8 /* Application */,
-				FC800D522BB7337C001344C8 /* Resources */,
 				FC5C382E2BB09ED70072FB2D /* Products */,
+				FC5C38342BB09ED90072FB2D /* Assets.xcassets */,
+				FC800D222BB34C51001344C8 /* GoogleService-Info.plist */,
 				FC5C38362BB09ED90072FB2D /* Preview Content */,
 				FC800D2D2BB35469001344C8 /* Frameworks */,
 			);
@@ -118,68 +116,26 @@
 		FC800D332BB3589E001344C8 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				FC800D312BB3552B001344C8 /* AuthenticationView.swift */,
-				FC800D372BB3591C001344C8 /* SignInView.swift */,
-				FC800D5B2BB8988F001344C8 /* RegistrationView.swift */,
+				FC800D662BB9CB8A001344C8 /* View */,
+				FC800D672BB9CBFE001344C8 /* ViewModel */,
 			);
 			path = Authentication;
-			sourceTree = "<group>";
-		};
-		FC800D342BB358B6001344C8 /* SignInEmailViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				FC800D352BB358D9001344C8 /* SignInEmailViewModel.swift */,
-			);
-			path = SignInEmailViewModel;
 			sourceTree = "<group>";
 		};
 		FC800D392BB42645001344C8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FC800D3A2BB42656001344C8 /* AuthDataModel.swift */,
+				FC800D3A2BB42656001344C8 /* UserModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		FC800D3C2BB4280B001344C8 /* AuthenticationManager */ = {
-			isa = PBXGroup;
-			children = (
-				FC800D3D2BB42836001344C8 /* AuthenticationManager.swift */,
-			);
-			path = AuthenticationManager;
-			sourceTree = "<group>";
-		};
-		FC800D4B2BB5A2F1001344C8 /* SettingView */ = {
+		FC800D4B2BB5A2F1001344C8 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
 				FC800D492BB5A2E6001344C8 /* SettingsScreenView.swift */,
 			);
-			path = SettingView;
-			sourceTree = "<group>";
-		};
-		FC800D4C2BB5A2FC001344C8 /* SettingsVIewModel */ = {
-			isa = PBXGroup;
-			children = (
-				FC800D4D2BB5A317001344C8 /* SettingsScreenViewModel.swift */,
-			);
-			path = SettingsVIewModel;
-			sourceTree = "<group>";
-		};
-		FC800D4F2BB6D28D001344C8 /* Enum */ = {
-			isa = PBXGroup;
-			children = (
-				FC800D502BB6D29A001344C8 /* AuthMode.swift */,
-			);
-			path = Enum;
-			sourceTree = "<group>";
-		};
-		FC800D522BB7337C001344C8 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				FC800D222BB34C51001344C8 /* GoogleService-Info.plist */,
-				FC5C38342BB09ED90072FB2D /* Assets.xcassets */,
-			);
-			path = Resources;
+			path = Setting;
 			sourceTree = "<group>";
 		};
 		FC800D532BB733DB001344C8 /* Application */ = {
@@ -190,14 +146,14 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		FC800D542BB87D97001344C8 /* View */ = {
+		FC800D542BB87D97001344C8 /* Core */ = {
 			isa = PBXGroup;
 			children = (
 				FC800D332BB3589E001344C8 /* Authentication */,
-				FC800D4B2BB5A2F1001344C8 /* SettingView */,
+				FC800D4B2BB5A2F1001344C8 /* Setting */,
 				FC800D552BB87D9F001344C8 /* Root */,
 			);
-			path = View;
+			path = Core;
 			sourceTree = "<group>";
 		};
 		FC800D552BB87D9F001344C8 /* Root */ = {
@@ -208,31 +164,37 @@
 			path = Root;
 			sourceTree = "<group>";
 		};
-		FC800D562BB87DD9001344C8 /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-				FC800D3C2BB4280B001344C8 /* AuthenticationManager */,
-			);
-			path = Manager;
-			sourceTree = "<group>";
-		};
-		FC800D572BB87E47001344C8 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				FC800D342BB358B6001344C8 /* SignInEmailViewModel */,
-				FC800D4C2BB5A2FC001344C8 /* SettingsVIewModel */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		FC800D582BB88E3C001344C8 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				FC800D4F2BB6D28D001344C8 /* Enum */,
 				FC800D592BB88E6F001344C8 /* InputView.swift */,
 				FC800D5D2BB9908C001344C8 /* SettingRowView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		FC800D5F2BB9CAA2001344C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC800D662BB9CB8A001344C8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC800D372BB3591C001344C8 /* SignInView.swift */,
+				FC800D5B2BB8988F001344C8 /* RegistrationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC800D672BB9CBFE001344C8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FC800D682BB9CD8E001344C8 /* AuthViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +219,9 @@
 				FC800D292BB34E0F001344C8 /* FirebaseAppCheck */,
 				FC800D2B2BB34E0F001344C8 /* FirebaseAppDistribution-Beta */,
 				FC800D2E2BB35469001344C8 /* FirebaseAuth */,
+				FC800D602BB9CAA2001344C8 /* FirebaseFirestore */,
+				FC800D622BB9CAA8001344C8 /* FirebaseFirestoreSwift */,
+				FC800D642BB9CACD001344C8 /* FirebaseStorage */,
 			);
 			productName = EcommerceApp;
 			productReference = FC5C382D2BB09ED70072FB2D /* EcommerceApp.app */;
@@ -316,19 +281,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC800D3E2BB42836001344C8 /* AuthenticationManager.swift in Sources */,
-				FC800D362BB358D9001344C8 /* SignInEmailViewModel.swift in Sources */,
-				FC800D512BB6D29A001344C8 /* AuthMode.swift in Sources */,
 				FC800D5C2BB8988F001344C8 /* RegistrationView.swift in Sources */,
 				FC800D472BB59D40001344C8 /* ContentView.swift in Sources */,
 				FC800D5E2BB9908C001344C8 /* SettingRowView.swift in Sources */,
 				FC5C38312BB09ED70072FB2D /* EcommerceAppApp.swift in Sources */,
-				FC800D3B2BB42656001344C8 /* AuthDataModel.swift in Sources */,
-				FC800D4E2BB5A317001344C8 /* SettingsScreenViewModel.swift in Sources */,
+				FC800D3B2BB42656001344C8 /* UserModel.swift in Sources */,
 				FC800D4A2BB5A2E6001344C8 /* SettingsScreenView.swift in Sources */,
 				FC800D5A2BB88E6F001344C8 /* InputView.swift in Sources */,
-				FC800D322BB3552B001344C8 /* AuthenticationView.swift in Sources */,
 				FC800D382BB3591C001344C8 /* SignInView.swift in Sources */,
+				FC800D692BB9CD8E001344C8 /* AuthViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,6 +532,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FC800D242BB34E0F001344C8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
+		};
+		FC800D602BB9CAA2001344C8 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC800D242BB34E0F001344C8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		FC800D622BB9CAA8001344C8 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC800D242BB34E0F001344C8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		FC800D642BB9CACD001344C8 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC800D242BB34E0F001344C8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

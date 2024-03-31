@@ -11,6 +11,7 @@ struct SignInView: View {
     
     @State private var email = ""
     @State private var password = ""
+    @EnvironmentObject var viewModel: AuthViewModel
     
     var body: some View {
         NavigationStack {
@@ -45,7 +46,9 @@ struct SignInView: View {
                 .padding(.top, 10)
                 
                 Button(action: {
-                    print("sign in")
+                    Task {
+                       try await viewModel.signIn(withEmail: email, password: password)
+                    }
                 }, label: {
                     Text("Sign In With Email")
                         .fontWeight(.semibold)

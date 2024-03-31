@@ -8,7 +8,7 @@
 import Foundation
 import FirebaseAuth
 
-struct AuthDataModel {
+struct UserModel: Identifiable, Codable {
     let id: String
     let fullName: String
     let email: String
@@ -21,4 +21,8 @@ struct AuthDataModel {
         }
         return ""
     }
+}
+
+extension UserModel {
+    static var MOCK_USER = UserModel(id: NSUUID().uuidString, fullName: "Steve Jobs", email: "test@gmail.com")
 }

@@ -12,11 +12,13 @@ import Firebase
 struct EcommerceAppApp: App {
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    @StateObject var viewModel = AuthViewModel()
     
     var body: some Scene {
         WindowGroup {
             NavigationStack {
                 ContentView()
+                    .environmentObject(viewModel)
             }
         }
     }

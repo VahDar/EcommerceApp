@@ -14,7 +14,7 @@ struct SettingsScreenView: View {
         List {
             Section {
                 HStack {
-                    Text("VD")
+                    Text(UserModel.MOCK_USER.initials)
                         .font(.title)
                         .fontWeight(.semibold)
                         .frame(width: 72, height: 72)
@@ -23,12 +23,12 @@ struct SettingsScreenView: View {
                         .clipShape(Circle())
                     
                     VStack(alignment: .leading) {
-                        Text("Vah Dar")
+                        Text(UserModel.MOCK_USER.fullName)
                             .fontWeight(.semibold)
                             .padding(.top, 4)
-                        Text("test@gmail.com")
+                        Text(UserModel.MOCK_USER.email)
                             .font(.footnote)
-                            .tint(.secondary)
+                            .foregroundStyle(Color.gray)
                     }
                 }
             }
