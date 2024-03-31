@@ -9,13 +9,16 @@ import Foundation
 import FirebaseAuth
 
 struct AuthDataModel {
-    let uid: String
-    let email: String?
-    let photoUrl: String?
+    let id: String
+    let fullName: String
+    let email: String
     
-    init(user: User) {
-        self.uid = user.uid
-        self.email = user.email
-        self.photoUrl = user.photoURL?.absoluteString
+    var initials: String {
+        let formatter = PersonNameComponentsFormatter()
+        if let components = formatter.personNameComponents(from: fullName) {
+            formatter.style = .abbreviated
+            return formatter.string(from: components)
+        }
+        return ""
     }
 }
