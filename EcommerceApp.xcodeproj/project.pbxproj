@@ -27,6 +27,7 @@
 		FC800D512BB6D29A001344C8 /* AuthMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D502BB6D29A001344C8 /* AuthMode.swift */; };
 		FC800D5A2BB88E6F001344C8 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D592BB88E6F001344C8 /* InputView.swift */; };
 		FC800D5C2BB8988F001344C8 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D5B2BB8988F001344C8 /* RegistrationView.swift */; };
+		FC800D5E2BB9908C001344C8 /* SettingRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC800D5D2BB9908C001344C8 /* SettingRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		FC800D502BB6D29A001344C8 /* AuthMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthMode.swift; sourceTree = "<group>"; };
 		FC800D592BB88E6F001344C8 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		FC800D5B2BB8988F001344C8 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		FC800D5D2BB9908C001344C8 /* SettingRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +230,7 @@
 			children = (
 				FC800D4F2BB6D28D001344C8 /* Enum */,
 				FC800D592BB88E6F001344C8 /* InputView.swift */,
+				FC800D5D2BB9908C001344C8 /* SettingRowView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 				FC800D512BB6D29A001344C8 /* AuthMode.swift in Sources */,
 				FC800D5C2BB8988F001344C8 /* RegistrationView.swift in Sources */,
 				FC800D472BB59D40001344C8 /* ContentView.swift in Sources */,
+				FC800D5E2BB9908C001344C8 /* SettingRowView.swift in Sources */,
 				FC5C38312BB09ED70072FB2D /* EcommerceAppApp.swift in Sources */,
 				FC800D3B2BB42656001344C8 /* AuthDataModel.swift in Sources */,
 				FC800D4E2BB5A317001344C8 /* SettingsScreenViewModel.swift in Sources */,
