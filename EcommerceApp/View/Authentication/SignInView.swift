@@ -58,7 +58,7 @@ struct SignInView: View {
                 Spacer()
                 
                 NavigationLink {
-                    
+                    RegistrationView()
                 } label: {
                     Text("Don't have an account? ")
                         + Text("Sign up")
