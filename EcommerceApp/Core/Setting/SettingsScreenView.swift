@@ -51,7 +51,7 @@ struct SettingsScreenView: View {
                 
                 Section("Account") {
                     Button {
-                        print("Sign out")
+                        viewmodel.signOut()
                     } label: {
                         SettingRowView(imageName: "arrow.left.circle.fill",
                                        title: "Sign Out",
