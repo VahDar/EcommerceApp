@@ -62,6 +62,7 @@ struct SignInView: View {
                 
                 NavigationLink {
                     RegistrationView()
+                        .environmentObject(viewModel)
                 } label: {
                     Text("Don't have an account? ")
                         + Text("Sign up")

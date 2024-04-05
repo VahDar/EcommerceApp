@@ -35,6 +35,7 @@ class AuthViewModel: ObservableObject {
             let user = UserModel(id: result.user.uid, fullName: fullName, email: email)
             let encodedUser = try Firestore.Encoder().encode(user)
             try await Firestore.firestore().collection("users").document(user.id).setData(encodedUser)
+            await fetchUser()
         } catch {
             print("DEBUG: Failed to create user with errot \(error.localizedDescription)")
         }
@@ -53,5 +54,7 @@ class AuthViewModel: ObservableObject {
         
         guard let snapshot = try? await Firestore.firestore().collection("users").document(uid).getDocument() else { return }
         self.currentUser = try? snapshot.data(as: UserModel.self)
+        
+        print("Debug: Current user is \(currentUser)")
     }
 }
