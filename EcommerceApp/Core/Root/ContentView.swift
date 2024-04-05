@@ -15,8 +15,10 @@ struct ContentView: View {
         Group {
             if viewModel.userSession != nil {
                 SettingsScreenView()
+                    .environmentObject(viewModel)
             } else {
                 SignInView()
+                    .environmentObject(viewModel)
             }
         }
     }

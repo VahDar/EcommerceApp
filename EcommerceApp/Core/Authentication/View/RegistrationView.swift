@@ -29,7 +29,7 @@ struct RegistrationView: View {
                 InputView(text: $email,
                           title: "Email Adress",
                           placeholder: "Enter your email")
-                    .textInputAutocapitalization(.never)
+                .textInputAutocapitalization(.never)
                 
                 InputView(text: $fullName,
                           title: "Full Name",
@@ -39,13 +39,13 @@ struct RegistrationView: View {
                           title: "Password",
                           placeholder: "Enter your password",
                           isSecureField: true)
-                    .textInputAutocapitalization(.never)
+                .textInputAutocapitalization(.never)
                 
                 InputView(text: $confirmPassword,
                           title: "Confirm Password",
                           placeholder: "Confirm your password",
                           isSecureField: true)
-                    .textInputAutocapitalization(.never)
+                .textInputAutocapitalization(.never)
             }
             .padding(.horizontal)
             .padding(.top, 10)
@@ -72,8 +72,8 @@ struct RegistrationView: View {
                 dismiss()
             } label: {
                 Text("Already have an account? ")
-                    + Text("Sign in")
-                        .fontWeight(.bold)
+                + Text("Sign in")
+                    .fontWeight(.bold)
             }
             .font(.system(size: 16))
         }
