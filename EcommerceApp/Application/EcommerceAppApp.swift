@@ -13,6 +13,9 @@ struct EcommerceAppApp: App {
     @StateObject var viewModel = AuthViewModel()
     
     init() {
+        let providerFactory = AppCheckDebugProviderFactory()
+        AppCheck.setAppCheckProviderFactory(providerFactory)
+
         FirebaseApp.configure()
     }
     
