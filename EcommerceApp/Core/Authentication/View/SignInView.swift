@@ -54,8 +54,10 @@ struct SignInView: View {
                         .fontWeight(.semibold)
                 })
                 .foregroundStyle(Color.white)
+                .disabled(!formIsValid)
                 .frame(width: UIScreen.main.bounds.width - 32, height: 48)
                 .background(Color.blue)
+                .opacity(formIsValid ? 1.0 : 0.5)
                 .clipShape(.rect(cornerRadius: 10))
                 .padding(.top, 8)
                 Spacer()
@@ -71,6 +73,15 @@ struct SignInView: View {
                 .font(.system(size: 16))
             }
         }
+    }
+}
+
+extension SignInView: AuthenticationFormProtocol {
+    var formIsValid: Bool {
+        return !email.isEmpty
+        && email.contains("@")
+        && !password.isEmpty
+        && password.count > 5
     }
 }
 

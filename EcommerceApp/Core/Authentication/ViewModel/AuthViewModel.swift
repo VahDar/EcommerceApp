@@ -11,6 +11,10 @@ import FirebaseAuth
 import FirebaseFirestore
 import FirebaseFirestoreSwift
 
+protocol AuthenticationFormProtocol {
+    var formIsValid: Bool { get }
+}
+
 @MainActor
 class AuthViewModel: ObservableObject {
     @Published var userSession: FirebaseAuth.User?
@@ -66,7 +70,6 @@ class AuthViewModel: ObservableObject {
         
         guard let snapshot = try? await Firestore.firestore().collection("users").document(uid).getDocument() else { return }
         self.currentUser = try? snapshot.data(as: UserModel.self)
-        
-        print("Debug: Current user is \(currentUser)")
     }
 }
+
